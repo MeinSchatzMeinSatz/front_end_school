@@ -1,3 +1,6 @@
 [submodule "Est_FrontEnd_6"]
 	path = Est_FrontEnd_6
 	url = https://github.com/MeinSchatzMeinSatz/Est_FrontEnd_6.git
+[submodule "front_end_school"]
+	path = front_end_school
+	url = https://github.com/MeinSchatzMeinSatz/front_end_school.git
