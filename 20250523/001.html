@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text와 관련된 태그들</title>
+        <style>
+            .korean {
+                word-break: keep-all;
+            }
+
+            .mark {
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            프론트엔드 개발 관련 지식들
+            <img src="" alt="" />
+            <input type="text" />
+        </p>
+        <p>프론트엔드 개발 관련 지식들</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br />
+            Ad magnam, quis blanditiis obcaecati voluptate odit veritatis veniam
+            unde nesciunt omnis odio voluptatem quaerat assumenda exercitationem
+            aut. Ea nostrum officia velit!
+            <!-- 아래와 같이 사용하지 않음 -->
+            <!-- 스타일 목적의 여백은 css를 사용 -->
+            <br><br>
+            <p>p태그 안에는 문장이 꼭 들어가야 해. 의미없이 쓰지 말 것.</p>
+            <p>
+                This is a
+                veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr />longwordthatwillbreakatspecific<wbr />placeswhenthebrowserwindowisresized.
+            </p>
+            <p class="korean">
+                이것은 브라우저창크기가조정될때특정위치에서깨지는
+                매우매우매우매우매우매우매우매우매우매우매우<wbr />매우매우매우매우매우매우매우매우매우매우매우매우매우<wbr />긴단어입니다.
+                후후후후후후후후
+            </p>
+        </p>
+        <!-- 짧은 코드조각을 사용하고 싶을떄 -->
+        <p>자바스크립트에서 배열에 요소를 추가하려면 push() <code>push()</code>메서드를 사용할 수 있습니다.</p>
+        <!-- 긴 코드조각을 사용하고 싶을때 -->
+        <pre>
+            .ʕ • τ • ʔ
+            (ↄ(    )c)
+                U︶U
+                ට   ​  ⠀◝◜  ⠀  ⠀⠀◝◜
+                ⠀◝◜  ⠀◝◜⠀◝◜  ⠀  ⠀⠀⠀⠀⠀⠀⠀◝◜
+                _◢╲___◢╲◢╲_◢╲_◢╲_
+                𓀚𓀛𓀜𓀝𓀞𓀟𓀠𓀡𓀢𓀣𓀤𓀥𓀦𓀧𓀨𓀩
+        </pre>
+        <!-- 이 모든 것들을 스타일을 위해서 사용해선 안되요. 목적에 맞게 사용하자. -->
+        <p>조심하세요! <strong>매우 위험합니다!</strong></p>
+        <p>조심하세요! <b>very Dangerous!</b></p>
+        <p>Actung <em>sehr Danger</em></p>
+        <p>지지가 <em>출근</em>하지 않았어요.</p>
+        <p>지지는 <em>재택근무중</em>이에요.</p>
+        <p>그녀는 속으로 <i>학생들이 수업을 열심히 듣고 있네</i>라고 생각했습니다.</p>
+        <!-- 짧은 인용문 -->
+        <p>
+            나는 어린 왕자 책에서 이 구절을 좋아해!
+            <q cite="https://example.com/article">만약 네가 오후 네 시에 온다면 난 세시부터 행복해질 거야</q>
+        </p>
+        <!-- 긴 인용문 -->
+        <figure>
+            <blockquote>
+            <p>
+                "만약 네가 오후 네시에 온다면 난 세시부터 행복해질 거야. 그리고 널 만날
+                시간이 가까워질수록 점점 더 행복해지겠지. 네시가 되면, 흥분해서 안절부절
+                못할 거야. 그래서 행복이 얼마나 값진 것인지를 알게 될 거야."
+            </p>
+            </blockquote>
+            <cite>— 어린왕자 여우의 말 중</cite>
+        </figure>
+        <footer>
+            <address>
+                <mark>이채준</mark><br>
+                <a href="tel +82010000000000">채준에게 연락하기</a><br>
+                신촌로 3나길 <br>
+                <a href="#">인스타그램 바로가기</a><br>
+                address 태그는 이런 정보를 전달하는 필 수 정 보야.
+            </address>
+        </footer>
+        <p>검색결과: <mark>결과 내용</mark></p>
+        <p>본문에서 <a href="#html-def">HTML</a>을 사용합니다.</p>
+        <p><dfn id="html-def" title="웹 페이지의 구조를 정의하는 마크업 언어">HTML</dfn>은 웹 개발의 기초입니다.</p>
+        <p>
+            쉽고 재미있는 <abbr title="Hypertext Markup Language">HTML</abbr>을 배웁시다!
+        </p>
+    </body>
+</html>
