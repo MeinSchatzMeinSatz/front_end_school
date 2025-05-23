@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>목록 관련 태그</title>
+    </head>
+    <body>
+        <h2>아침에 일어나서 하는 일</h2>
+        <!-- ul ol의 속성과 속성값!! -->
+        <ol type="i" start="5" reversed>
+            <li>이불 정리</li>
+            <li>빈 속에 물 한잔</li>
+            <li>스트레칭</li>
+            <li>샤워</li>
+        </ol>
+        <nav>
+            <!-- 순서가 중요한 목록에 적합 -->
+            <ol>
+                <li>
+                    <a href="#">홈</a>
+                </li>
+                <li>
+                    <a href="#">제품</a>
+                </li>
+                <li>
+                    <a href="#">랩탑</a>
+                </li>
+                <li>Macbook Pro</li>
+            </ol>
+        </nav>
+        <!-- 순서가 중요하지 않는 목록에 적용합니다. -->
+        <ul>
+            <li>로지</li>
+            <li>지지</li>
+            <li>라이캣</li>
+            <li>소울곰</li>
+        </ul>
+        <!-- 계층관계 주의하자, ol, ul의 자식은 li만 가능 -->
+        <!-- 자손으론 들어갈 수 있어 -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">홈</a>
+                </li>
+                <li>
+                    <a href="#about">소개</a>
+                </li>
+                <li>
+                    <a href="#service">서비스</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 용어에 대한 설명시에만 dl을 사용할 것. -->
+        <dl>
+            <dt>해리 포터</dt>
+            <dd>J. K. 롤링의 소설 해리포터 시리즈의 주인공이다.</dd>
+            <dd>마법사로서의 모험을 겪는 것이다.</dd>
+            <dd>이마에 번개 모양의 상처가 있다.</dd>
+            <dd>헤르미온느의 친구이다.</dd>
+        </dl>
+        <dl>
+            <dt>위니브</dt>
+            <dd>제주도에 위치한 ICT 콘텐츠 회사</dd>
+            <dd>설립일</dd>
+            <dd>2000년 0월 0일</dd>
+            <dt>연락처 정보</dt>
+            <dd>
+                <address>
+                    전화번호: 000-0000-0000 <br />
+                    주소: 구산로 58
+                </address>
+            </dd>
+        </dl>
+    </body>
+</html>
