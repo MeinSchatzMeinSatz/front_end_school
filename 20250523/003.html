@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>블록레벨요소vs.인라인레벨요소</title>
+        <style>
+            div {
+                border: 1px solid black;
+            }
+
+            span {
+                color: red;
+                background-color: yellow;
+            }
+
+            .block {
+                background-color: aqua;
+            }
+
+            .inline {
+                background-color: blueviolet;
+            }
+
+            button {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- div를 사용하는 이유. 스타일의 적용을 위함.  -->
+        <!-- 시멘틱 태그의 사용을 우선할 것. -->
+        <div>
+            <p>hello</p>
+            <p>world</p>
+            <p>chaejun</p>
+        </div>
+        <!-- s -->
+        <p>
+            <span>Lorem ipsum dolor</span>, sit amet consectetur adipisicing
+            elit. Officia officiis ducimus iure minima dolores, at est ut omnis
+            illum necessitatibus ad. Quis vero, deserunt omnis dolor laborum
+            consequuntur quam optio?
+        </p>
+
+        <!--div와 span의 차이점.-->
+        <div class="block">div</div>
+        <span class="inline">span</span>
+        <!-- div안에는 span 가능, span 안에 div는 불가능 -->
+        <!-- 예외적으로 a 태그는 div 내부에 블록 요소 중첩 가능 -->
+        <span class="inline">span</span>
+        <span class="inline">span</span>
+        <span class="inline">span</span>
+        <span class="inline">span</span>
+
+        <!-- 인라인블록이란 인라인과 블록요소의 특징을 반반 갖고 있는 녀석이다. -->
+        <button>button</button><button>button</button><button>button</button
+        ><button>button</button><button>button</button><button>button</button
+        ><button>button</button>
+    </body>
+</html>
