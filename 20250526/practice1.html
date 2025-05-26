@@ -44,32 +44,33 @@
             <thead>
                 <tr>
                     <th id="구분">구분</th>
-                    <th id="한국사" rowspan="2">한국사 영역</th>
-                    <th id="국어">국어 영역</th>
-                    <th id="수학">수학 영역</th>
-                    <th id="영어" rowspan="2">영어 영역</th>
-                    <th id="탐구" colspan="2">탐구 영역</th>
-                    <th id="제2외국어">제 2 외국어/한문 영역</th>
+                    <th scope="col" rowspan="2" id="한국사">한국사 영역</th>
+                    <th scope="col" id="국어">국어 영역</th>
+                    <th scope="col" id="수학">수학 영역</th>
+                    <th scope="col" rowspan="2" id="영어">영어 영역</th>
+                    <!-- 두개의 셀을 병합했으므로 -->
+                    <th scope="colgroup" colspan="2" id="탐구">탐구 영역</th>
+                    <th scope="col" id="제2외국어">제 2 외국어/한문 영역</th>
                 </tr>
                 <tr>
-                    <th id="선택과목">선택과목</th>
-                    <th id="화법작문">화법과 작문</th>
-                    <th id="확률통계">확률과 통계</th>
-                    <th id="생활윤리">생활과 윤리</th>
-                    <th id="지구과학1">지구과학 1</th>
-                    <th id="독일어">독일어</th>
+                    <th id="선택과목" scope="row">선택과목</th>
+                    <th id="화법작문" scope="col">화법과 작문</th>
+                    <th id="확률통계" scope="col">확률과 통계</th>
+                    <th id="생활윤리" scope="col">생활과 윤리</th>
+                    <th id="지구과학1" scope="col">지구과학 1</th>
+                    <th id="독일어" scope="col">독일어</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th id="표준점수">표준점수</th>
-                    <td rowspan="2"></td>
+                    <th id="표준점수" scope="row">표준점수</th>
+                    <td rowspan="2">&nbsp;</td>
                     <td headers="표준점수 국어 화법작문">131</td>
                     <td headers="표준점수 수학 확률통계">137</td>
-                    <td rowspan="2"></td>
+                    <td rowspan="2">&nbsp;</td>
                     <td headers="표준점수 탐구 생활윤리">53</td>
                     <td headers="표준점수 탐구 지구과학1">64</td>
-                    <td rowspan="2"></td>
+                    <td rowspan="2">&nbsp;</td>
                 </tr>
                 <tr>
                     <th id="백분위">백분위</th>
@@ -78,6 +79,8 @@
                     <td headers="백분위 탐구 생활윤리">75</td>
                     <td headers="백분위 탐구 지구과학1">93</td>
                 </tr>
+            </tbody>
+            <tfoot>
                 <tr>
                     <th id="등급">등급</th>
                     <td headers="등급 한국사">2</td>
@@ -88,7 +91,7 @@
                     <td headers="등급 탐구 지구과학1">2</td>
                     <td headers="등급 제2외국어 독일어">2</td>
                 </tr>
-            </tbody>
+            </tfoot>
             <caption>
                 2023 학년도 대학수학능력시험 성적통지표
             </caption>
