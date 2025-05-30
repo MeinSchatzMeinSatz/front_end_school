@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form 관련 요소들</title>
+    </head>
+    <body>
+        <!-- 관련된 폼 요소들을 논리적으로 그룹화 -->
+        <fieldset>
+            <legend>직업목록</legend>
+            <label for="job">직업을 선택해주세요.</label>
+            <select name="job" id="job" size="#">
+                <option value="">선택해주세요.</option>
+                <optgroup label="개발자">
+                    <option value="fe">프론트엔드</option>
+                    <option value="be">백엔드</option>
+                    <option value="fe" selected>알고리즈머</option>
+                </optgroup>
+                <optgroup value="디자이너">
+                    <option value="designer">디자이너</option>
+                </optgroup>
+                <option value="pm">기획자</option>
+            </select>
+        </fieldset>
+
+        <!-- 인풋과 셀렉트를 결합한 요소 -->
+        <fieldset>
+            <legend>도시이름</legend>
+            <label for="city">도시 검색:</label>
+            <input
+                list="cities"
+                id="city"
+                name="city"
+                placeholder="도시 이름 입력"
+            />
+            <datalist id="cities">
+                <option value="서울"></option>
+                <option value="부산"></option>
+                <option value="인천"></option>
+                <option value="대구"></option>
+                <option value="광주"></option>
+                <option value="대전"></option>
+                <option value="울산"></option>
+                <option value="제주"></option>
+            </datalist>
+        </fieldset>
+    </body>
+</html>

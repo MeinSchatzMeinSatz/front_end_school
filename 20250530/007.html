@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form 관련 요소들</title>
+    </head>
+    <body>
+        <!-- 사용자가 입력한 데이터를 제출, 전송하기 위해 사용하는 태그 -->
+        <!-- 예시 : 로그인, 회원가입, 주문 등 서버로 데이터를 전송하는 경우 -->
+
+        <!-- method. 데이터 전송 방식을 지정해준다. -->
+        <!-- get 방식의 특징, url에 나온다 -->
+        <!-- 보안상 취약하므로 Post방식을 사용할 것. -->
+        <!-- 그래서 어디에 쓰이는데? 검색 창! -->
+        <form action="" method="get">
+            <label for="id">아이디: </label>
+            <input type="text" name="id" />
+            <br />
+            <label for="usernmae">닉네임: </label>
+            <input type="text" id="username" name="username" />
+            <br />
+            <label for="pw">비밀번호: </label>
+            <input type="password" id="pw" name="pw" />
+            <br />
+            <input type="submit" value="전송" />
+        </form>
+
+        <!-- 반면 post 방식은 브라우저에 캐시x, 히스토리에도 남지 않음 -->
+        <!-- 로그인 데이터와 같은 중요한 데이터를 다룰 때 사용 -->
+
+        <!-- action 속성 -->
+        <!-- 데이터를 어디로 보낼 것인지 지정 -->
+        <!-- 이 값은 반드시 유효한 url이어야 함. -->
+
+        <!-- autocomplete. 값을 자동완성 할 것인지 여부 결정 -->
+        <!-- 속성값 : on/off -->
+        <!-- form 태그 안에 위치시키면 form안의 요소들을 제어할 수 있어 -->
+
+        <!-- 파일 업로드 -->
+        <label for="profile">프로필 이미지</label>
+        <input type="file" id="profile" name="profile" />
+
+        <label for="num">숫자 입력</label>
+        <input type="number" name="number" id="num" />
+    </body>
+</html>
