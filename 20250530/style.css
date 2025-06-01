@@ -1,0 +1,79 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .total-container {
+} */
+
+.title-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+h1 {
+    flex-grow: 2;
+    font-size: medium;
+    text-align: center;
+}
+
+.exit-button {
+    flex-grow: 1;
+    background-color: white;
+    border-color: white;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginId,
+.loginPw {
+    width: 1000px;
+}
+
+.option-box {
+    display: flex;
+}
+
+.login-option-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 이 부분 이해가 안되네 */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.login-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
