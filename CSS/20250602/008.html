@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>가상클래스, 가상 요소 기초3</title>
+        <style>
+            /* 타입에 관계없이 N 번째 태그를 선택 */
+            div :nth-child(1) {
+                color: red;
+            }
+            /* even */
+            div :nth-child(2n) {
+                background-color: aquamarine;
+            }
+            /* div :nth-child(odd) {
+                background-color: cornflowerblue;
+            } */
+
+            div :nth-child(2n + 1) {
+                background-color: cornflowerblue;
+            }
+
+            div :nth-child(-n + 3) {
+                font-size: 32px;
+            }
+
+            div p:nth-child(3) {
+                background-color: crimson;
+            }
+
+            /* 형제 요소 중 동일한 타입 요소 중 위치 기반으로 선택 */
+            div p:nth-of-type(3) {
+                background-color: green;
+            }
+
+            /* 형제 요소 중 유일하게 사용된 타입의 요소를 선택 */
+            div :only-of-type {
+                color: blueviolet;
+            }
+
+            ul li:not(:first-child) {
+                color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>첫 번째 문단</p>
+            <h2>첫 번째 제목</h2>
+            <p>두 번째 제목</p>
+            <p>세 번째 제목</p>
+            <span>lorem ipsum</span>
+        </div>
+        <ul>
+            <li>1번째 항목</li>
+            <li>2번째 항목</li>
+            <li>3번째 항목</li>
+            <li>4번째 항목</li>
+            <li>5번째 항목</li>
+        </ul>
+    </body>
+</html>

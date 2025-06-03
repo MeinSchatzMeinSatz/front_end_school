@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>root</title>
+        <style>
+            /* root를 통해 스타일을 쉽게 재사용해줄 수 있게 해줌 */
+            /* 브랜드 디자인 시스템을 구축할 때 매우 유용 */
+            /* 일관된 스타일을 유지하고 유지보수를 용이하게 */
+            :root {
+                --main-color: blue;
+                --main-font-size: 24px;
+                --btn-padding: 4px 20px;
+            }
+
+            body {
+                color: var(--main-color);
+                font-size: var(--main-font-size);
+            }
+
+            button {
+                padding: var(--btn-padding);
+            }
+        </style>
+    </head>
+    <body>
+        <p>안녕하세요</p>
+        <button>로그인 버튼</button>
+        <div class="color1">
+            <p>안녕하세요</p>
+            <button>회원가입 버튼</button>
+        </div>
+        <div class="color1">
+            <p>안녕하세요</p>
+            <button>비밀번호 찾기 버튼</button>
+        </div>
+    </body>
+</html>

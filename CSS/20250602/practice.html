@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>가상요소 실습</title>
+        <style>
+            span {
+                padding: 20px;
+                display: inline-block;
+            }
+
+            div > :first-child {
+                background-color: red;
+                outline: solid 5px black;
+            }
+
+            div > :nth-child(2) {
+                background-color: orange;
+            }
+
+            div > :nth-child(3) {
+                background-color: yellow;
+            }
+            div > :nth-child(4) {
+                background-color: greenyellow;
+            }
+
+            div > :nth-child(5) {
+                background-color: skyblue;
+            }
+
+            div > :nth-child(6) {
+                background-color: blue;
+                color: white;
+            }
+
+            div > :last-child {
+                background-color: blueviolet;
+                color: white;
+                outline: solid 5px black;
+            }
+
+            :span :hover {
+                padding: 5px black;
+            }
+
+            li::before {
+                content: "💜";
+            }
+            li::after {
+                content: "팀원";
+                font-size: 9px;
+                color: gray;
+            }
+
+            ul > :first-child::before {
+                content: "🦊";
+            }
+
+            ul > :last-child::after {
+                content: "팀장";
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <span>빨강</span>
+            <span>주황</span>
+            <span>노랑</span>
+            <span>초록</span>
+            <span>파랑</span>
+            <span>남색</span>
+            <span>보라</span>
+        </div>
+
+        <ul>
+            <li>지지</li>
+            <li>로지</li>
+            <li>웨이드</li>
+            <li>하티</li>
+            <li>라이캣</li>
+            <li>뮤라</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>가상클래스, 가상 요소 기초</title>
+        <style>
+            /* 방문하지 않은 링크 선택 */
+            a:link {
+                color: red;
+                background-color: blue;
+            }
+            /* 이미 방문한 링크 선택 */
+            a:visited {
+                color: grey;
+                background-color: white;
+            }
+            /* 마우스 호버시 요소 선택 */
+            P:hover {
+                background-color: coral;
+            }
+            /* 마우스 클릭시 스타일 적용 */
+            p:active {
+                border: solid 5px black;
+            }
+            /* 현재 초점을 가진 요소를 선택 */
+            a:focus {
+                outline: solid 10px hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://paullab.co.kr/about.html">방문한 링크</a>
+        <a href="https?://www.studyin.co.kr">방문하지 않은 링크</a>
+    </body>
+    <p>마우스를 올려보세요</p>
+    <p>마우스를 올려보세요</p>
+    <p>마우스를 올려보세요</p>
+    <p>마우스를 올려보세요</p>
+    <p>마우스를 올려보세요</p>
+    <p>마우스를 올려보세요</p>
+</html>
