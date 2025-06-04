@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>길이 단위</title>
+        <style>
+            /* 절대 길이 단위 */
+            .px {
+                width: 500px;
+                background-color: lightblue;
+            }
+
+            /* 상대 길이 단위, "부모 요소"의 해당 속성값을 기준 */
+            .percent {
+                width: 50%;
+                background-color: rgb(238, 139, 139);
+            }
+
+            /* 뷰포트의 너비기준, 100vw = 브라우저 너비 */
+            .vw {
+                width: 50vw;
+                background-color: aquamarine;
+            }
+            /* 뷰포트의 높이 기준, 100vh = 브라우저 높이 */
+            .vh {
+                height: 50vh;
+                background-color: greenyellow;
+            }
+
+            /* 뷰포트의 높이, 너비 중 더 작은 값을 기준 */
+            .vmin {
+                width: 50vmin;
+                background-color: purple;
+            }
+            /* 뷰포트의 높이, 너비 중 더 큰 값을 기준 */
+            .vmax {
+                width: 50vmax;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="px">
+            <strong>div width: 500px</strong>
+            <br />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Asperiores, ipsa fugiat! Iusto enim at minus atque soluta numquam
+            saepe tempore provident, harum consequuntur fugiat, necessitatibus
+            mollitia ratione unde eligendi quos?
+        </div>
+
+        <div class="px">
+            <strong>div width: 500px</strong>
+            <br />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Asperiores, ipsa fugiat! Iusto enim at minus atque soluta numquam
+            saepe tempore provident, harum consequuntur fugiat, necessitatibus
+            mollitia ratione unde eligendi quos?
+            <div class="percent">
+                <strong>div width 50%</strong>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                deserunt, asperiores ad porro tenetur dicta tempore. Eligendi
+                quos voluptatibus fugit iusto aliquam autem aliquid veritatis
+                aspernatur laudantium? Officia, incidunt ducimus?
+            </div>
+        </div>
+        <br />
+        <div class="vw">
+            <strong>div width 50vw</strong>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ea
+            fuga ratione eligendi, omnis a quae libero exercitationem atque
+            minima voluptatum eveniet obcaecati nisi dolores inventore cumque.
+            Labore, obcaecati doloremque.
+        </div>
+        <div class="vh">
+            <strong>div height 50vh</strong>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ea
+            fuga ratione eligendi, omnis a quae libero exercitationem atque
+            minima voluptatum eveniet obcaecati nisi dolores inventore cumque.
+            Labore, obcaecati doloremque.
+        </div>
+
+        <div class="vmin">
+            <strong>div width: 50vmin</strong>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at
+            quos rerum quo tempore necessitatibus provident labore ullam. Totam
+            odit, dolor fuga esse laboriosam illum atque numquam corporis nisi
+            tempora.
+        </div>
+        <div class="vmax">
+            <strong>div width: 50vmax</strong>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at
+            quos rerum quo tempore necessitatibus provident labore ullam. Totam
+            odit, dolor fuga esse laboriosam illum atque numquam corporis nisi
+            tempora.
+        </div>
+    </body>
+</html>
