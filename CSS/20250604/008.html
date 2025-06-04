@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>행간 자간</title>
+        <style>
+            p {
+                /* 행간 조절 1.5~2 사이가 가독성이 좋음 */
+                line-height: 2;
+                line-height: 20px;
+                /* 자간 조절을 하는 속성 */
+                /* letter-spacing: 20px; */
+            }
+
+            span {
+                line-height: 2.5;
+                background-color: lightcoral;
+            }
+
+            span > span {
+                line-height: 1;
+                background-color: lightgreen;
+            }
+
+            span .baseline {
+                vertical-align: baseline;
+            }
+
+            span .top {
+                vertical-align: top;
+            }
+
+            span .bottom {
+                vertical-align: bottom;
+            }
+
+            span .text-top {
+                vertical-align: text-top;
+            }
+
+            span .text-botoom {
+                vertical-align: text-bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos amet
+            consequatur dolores iure repellat sed rem sunt repudiandae mollitia
+            porro rerum dolorem, cum fugit reiciendis ratione quod corporis
+            alias tenetur!
+        </p>
+
+        <span>
+            텍스트
+            <span class="box baseline"> baseline </span>
+        </span>
+        <span>
+            텍스트
+            <span class="box top"> baseline </span>
+        </span>
+        <span>
+            텍스트
+            <span class="box bottom"> baseline </span>
+        </span>
+        <span>
+            텍스트
+            <span class="box text-top"> baseline </span>
+        </span>
+        <span>
+            텍스트
+            <span class="box text-bottom"> baseline </span>
+        </span>
+    </body>
+</html>

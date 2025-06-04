@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>글꼴 크기</title>
+    </head>
+    <style>
+        p {
+            /* 절대 단위 */
+            font-size: 16px;
+            /* 상대 단위 */
+            font-size: 2rem;
+            font-size: 3em;
+
+            /* 절대 크기 키워드 */
+            font-size: xx-small;
+            font-size: large;
+            font-size: xx-large;
+
+            /* 폰트의 굵기 지정 */
+            font-weight: bold;
+            font-weight: 900;
+
+            /* 폰트를 대문자로 */
+            text-transform: uppercase;
+            /* 폰트를 소문자로 */
+            text-transform: lowercase;
+            /* 폰트의 첫 글자를 대문자로 */
+            text-transform: capitalize;
+        }
+
+        span {
+            /* 부모 요소 기준 상대 크기 키워드 */
+            font-size: larger;
+            font-size: smaller;
+        }
+
+        a {
+            text-decoration: none;
+            /* text-decoration-line: overline underline line-through;
+            text-decoration-style: wavy;
+            text-decoration-color: rgb(0, 255, 106); */
+            /* text-decoration: red overline underline line-through wavy 5px; */
+
+            text-shadow: 10px 10px 5px gray, -10px -10px 5px red;
+        }
+    </style>
+    <body>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+            omnis facere, id repellat cupiditate sequi voluptatem numquam.
+            Impedit obcaecati rerum error animi. Quam doloribus magni delectus
+            eos amet repellendus numquam.
+            <span>lorem</span>
+            <a href="">여기를 클릭하세요</a>
+        </p>
+    </body>
+</html>

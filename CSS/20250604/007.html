@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>텍스트 정렬</title>
+        <style>
+            p {
+                width: 300px;
+                border: solid 1px black;
+
+                /* 텍스트의 가로 정렬 */
+                /* 오른쪽 정렬 */
+                /* text-align: right; */
+                /* 중앙 정렬 */
+                /* text-align: center; */
+                /* 양쪽 정렬 - 비권장 */
+                /* text-align: justify; */
+
+                /* 텍스트의 시작부분 들여쓰기 설정 */
+                text-indent: 30px;
+
+                /* 모든 문자 사이에서 줄바꿈 가능 */
+                word-break: break-all;
+                /* 단어 사이에서만 줄바꿈 가능 */
+                word-break: keep-all;
+            }
+            .overflow-clip {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: clip;
+            }
+
+            /* 넘치는 텍스트 부분에 (...)처리를 해준다 */
+            .ellipsis {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .multi-ellipsis {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            magnam reprehenderit illum delectus reiciendis excepturi aspernatur
+            nihil, omnis sapiente odio asperiores dolorum, exercitationem
+            quisquam temporibus, non ratione magni modi ut?
+        </p>
+        <p>
+            This is a long English text with
+            verylongwordthatwilloverflowthecontainer and 영어와 한글이 섞여 있는
+            텍스트입니다.
+        </p>
+        <p class="overflow-clip">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vero,
+            nisi natus vel qui temporibus ad magni. Nulla pariatur id quos totam
+            modi cumque libero, distinctio nobis excepturi facere temporibus.
+        </p>
+        <p class="ellipsis">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vero,
+            nisi natus vel qui temporibus ad magni. Nulla pariatur id quos totam
+            modi cumque libero, distinctio nobis excepturi facere temporibus.
+        </p>
+        <p class="multi-ellipsis">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vero,
+            nisi natus vel qui temporibus ad magni. Nulla pariatur id quos totam
+            modi cumque libero, distinctio nobis excepturi facere temporibus.
+        </p>
+    </body>
+</html>
