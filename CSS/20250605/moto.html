@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>나의 모토 만들기</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Grandiflora+One&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                background-color: lightblue;
+            }
+            .para-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid lightcoral;
+            }
+            .para1 {
+                font-family: "Grandiflora One", cursive;
+                font-weight: 700;
+                font-style: normal;
+            }
+            b {
+                color: white;
+                font-weight: 700;
+                text-decoration: underline wavy yellow;
+                text-shadow: 1px 1px 2px black, 0 0 1em blue;
+            }
+            strong {
+                font-family: "Edu NSW ACT Cursive", cursive;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                color: white;
+                text-transform: capitalize;
+                text-decoration: underline wavy yellow;
+                text-shadow: 1px 1px 2px black, 0 0 1em blue;
+            }
+
+            img {
+                width: 30vw;
+                height: 50vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="para-box">
+            <p class="para1">
+                <b>담겨있지 않은 개</b>는 뉴욕지하철을 탈 수 없습니다.
+            </p>
+            <p class="para1">
+                담겨있지 않으면 <strong>box-model</strong>이 아닙니다.
+            </p>
+        </div>
+        <div class="img-box">
+            <img src="./img/box-model.jpeg" alt="뉴욕지하철 강아지" />
+            <img src="./img/box-moder2.jpeg" alt="뉴욕지하철 강아지2" />
+        </div>
+    </body>
+</html>
