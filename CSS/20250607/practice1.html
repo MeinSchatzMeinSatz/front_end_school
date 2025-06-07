@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>버튼 만들기 실습</title>
+        <style>
+            @font-face {
+                font-family: "Pretendard-Regular";
+                src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+                    format("woff");
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            * {
+                font-family: "Pretendard-Regular";
+            }
+
+            .container {
+                display: flex;
+                gap: 30px;
+            }
+
+            button {
+                width: 88px;
+                height: 32px;
+                background-color: #343f50;
+                border-radius: 0px;
+                padding: 1px 0px 0px 1px;
+                border-color: #1a202c;
+                border-width: 1px;
+                border-top-color: #485262;
+                border-left-color: #485262;
+            }
+
+            .normal {
+                color: #cbd5df;
+            }
+
+            .normal:hover {
+                color: white;
+                text-decoration: underline white;
+                border-top-color: #5e6573;
+                border-left-color: #5e6573;
+            }
+
+            .normal:active {
+                color: white;
+                text-decoration: underline white;
+                border-top-color: #2b3240;
+                border-left-color: #2b3240;
+            }
+
+            .positive {
+                color: #449aff;
+                border-top-color: #485262;
+                border-left-color: #485262;
+            }
+
+            .positive:hover {
+                background-color: #449aff;
+                color: #ffffff;
+                text-decoration: underline #ffffff;
+                border-top-color: #69aeff;
+                border-left-color: #69aeff;
+            }
+
+            .positive:active {
+                background-color: #449aff;
+                color: #ffffff;
+                text-decoration: underline #ffffff;
+                border-top-color: #367bcc;
+                border-left-color: #367bcc;
+            }
+
+            .negativ {
+                color: #eb5757;
+            }
+
+            .negativ:hover {
+                background-color: #eb5757;
+                color: #ffffff;
+                text-decoration: underline #ffffff;
+                border-top-color: #ef7979;
+                border-left-color: #ef7979;
+            }
+
+            .negative:active {
+                background-color: #eb5757;
+                color: #ffffff;
+                text-decoration: underline #ffffff;
+                border-top-color: #bc4646;
+                border-left-color: #bc4646;
+            }
+
+            section {
+                margin-top: 30px;
+            }
+
+            .box {
+                background-color: lightblue;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                align-content: center;
+            }
+
+            .hello1 {
+                background-color: rgb(88 98 110);
+                color: rgb(255 254 253);
+                padding: 5px 0px 0px 5px;
+                padding-color: black;
+                outline-width: 10px;
+                outline-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="container">
+                <div>
+                    <p>normal</p>
+                    <button class="normal">Button</button>
+                </div>
+                <div>
+                    <p>positive</p>
+                    <button class="positive">Yes</button>
+                </div>
+                <div>
+                    <p>negative</p>
+                    <button class="negativ">Del</button>
+                </div>
+            </section>
+            <section class="container">
+                <div class="box hello1">hello👋</div>
+                <div class="box hello2">hello👋</div>
+                <div class="box hello3">hello👋</div>
+            </section>
+        </main>
+    </body>
+</html>
