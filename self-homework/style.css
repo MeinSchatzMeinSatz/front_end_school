@@ -1,0 +1,91 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.box-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    border: solid 3px;
+    border-color: #bababa;
+    border-radius: 10px;
+    width: 22%;
+}
+
+.poster-img {
+    margin: 10px;
+    width: 93%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+p {
+    margin-top: 0px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.content-box {
+    display: flex;
+}
+
+.content {
+    list-style: none;
+    text-align: left;
+}
+
+.introduce::before {
+    color: #cacaca;
+}
+
+.genre::before {
+    content: "개요 ";
+}
+
+.publish-day::before {
+    content: "개봉 ";
+}
+
+.actors::before {
+    content: "출연 ";
+}
+
+.star::before {
+    content: "별점 ";
+}
+
+.spoiler-img {
+    width: 10px;
+    height: 10px;
+}
+
+.button-box {
+    display: flex;
+    gap: 0px;
+}
+
+.ticketing,
+.spoiler-btn {
+    width: 50%;
+    height: 30px;
+}
