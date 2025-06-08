@@ -109,10 +109,30 @@
             .hello1 {
                 background-color: rgb(88 98 110);
                 color: rgb(255 254 253);
-                padding: 5px 0px 0px 5px;
-                padding-color: black;
-                outline-width: 10px;
-                outline-color: black;
+                border: solid 0.5em rgb(119 133 146);
+                border-top-width: 0.5em;
+                border-left-width: 0.5em;
+                border-right-width: 0;
+                border-bottom-width: 0;
+                outline: solid 0.5em black;
+            }
+
+            .hello2 {
+                color: white;
+                background: RGB(130 76 246);
+                background: linear-gradient(
+                    90deg,
+                    rgba(130, 76, 246, 1) 0%,
+                    rgba(53, 109, 242, 1) 100%
+                );
+                border-radius: 50px;
+                outline: dashed 0.5em rgb(230 230 250);
+            }
+
+            .hello3 {
+                background-color: white;
+                border: solid 2px rgb(176 196 222);
+                border-radius: 0px 50px 50px 50px;
             }
         </style>
     </head>
