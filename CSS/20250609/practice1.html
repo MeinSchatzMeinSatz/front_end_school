@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>img실습</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1px;
+            }
+            .box1 {
+                position: relative;
+                width: 33%;
+                height: 0;
+                padding-top: 33%;
+            }
+
+            .box1 img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .box2 {
+                width: 33%;
+            }
+            .img2 {
+                width: 100%;
+                aspect-ratio: 2 / 1;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <img class="img1" src="./img/weniv-binky.png" alt="binky" />
+        </div>
+        <div class="box1">
+            <img class="img1" src="./img/weniv-chilli.png" alt="chilli" />
+        </div>
+        <div class="box1">
+            <img class="img1" src="./img/weniv-garry.png" alt="garry" />
+        </div>
+        <div class="box1">
+            <img class="img1" src="./img/weniv-licat.png" alt="licat" />
+        </div>
+        <div class="box1">
+            <img class="img1" src="./img/weniv-suri.png" alt="suri" />
+        </div>
+        <div class="box1">
+            <img class="img1" src="./img/weniv-wade.png" alt="wade" />
+        </div>
+
+        <div class="box2">
+            <img class="img2" src="./img/weniv-binky.png" alt="binky" />
+        </div>
+        <div class="box2">
+            <img class="img2" src="./img/weniv-chilli.png" alt="chilli" />
+        </div>
+        <div class="box2">
+            <img class="img2" src="./img/weniv-garry.png" alt="garry" />
+        </div>
+        <div class="box2">
+            <img class="img2" src="./img/weniv-licat.png" alt="licat" />
+        </div>
+        <div class="box2">
+            <img class="img2" src="./img/weniv-suri.png" alt="suri" />
+        </div>
+        <div class="box2">
+            <img class="img2" src="./img/weniv-wade.png" alt="wade" />
+        </div>
+    </body>
+</html>
