@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position</title>
+        <style>
+            /* relative */
+            /* normal flow에 영향을 주지 않고, 원래 있던 위치를 기준으로 이동하게 된다. */
+            .relative {
+                background-color: lightcoral;
+                position: relative;
+                top: 20px;
+                left: 20px;
+            }
+
+            .normal {
+                background: lightgreen;
+            }
+
+            /* absolute */
+            /* 이 포지션을 지정하면 normal flow에서 벗어나서 relative 박스가 인식하지 못한다. */
+            /* 주변에 relative를 지정한 요소가 없다면, viewport를 기준으로 한다. */
+            .absolute {
+                background-color: lightskyblue;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            /* fixed */
+            /* 뷰포트를 기준으로 일정한 포인트에 고정된 것 */
+            .fixed {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: lightseagreen;
+                position: fixed;
+                top: 40px;
+                bottom: 40px;
+            }
+
+            /* 임계점에 도달하기 전엔 relative처럼 도달한 후에는 fixed 처럼 동작
+            임계점을 항상 설정해주어야 함 */
+            .sticky {
+                height: 50px;
+                background-color: lightgoldenrodyellow;
+                position: sticky;
+                top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="relative">
+            relative
+            <div class="absolute">absolute</div>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            eaque eos inventore atque suscipit sunt non commodi cum animi illum
+            quos qui blanditiis eius quae nobis consectetur, dolor veniam
+            perferendis! Magnam commodi odit aliquam facere eum, iure placeat
+            cumque voluptatem sit suscipit vero ut et itaque temporibus
+            provident sunt. Et alias explicabo porro possimus iure nostrum
+            reprehenderit unde numquam ullam. Quibusdam sed aperiam dolorum,
+            sapiente doloremque rerum libero. Voluptas sunt aut recusandae nulla
+            sequi quia, voluptate modi consequatur? Fugiat cum maxime eius odit,
+            <div class="sticky">sticky</div>
+
+            ipsam tempore quibusdam assumenda. Eligendi, unde nam. Ullam, vero
+            explicabo? Cumque molestias maiores perferendis aut tempora fugiat
+            quas voluptatem odit vitae, doloribus dolor eius quo amet, quasi
+            molestiae aspernatur ipsam beatae corporis in. Dicta minima impedit
+            placeat? Eligendi quisquam veritatis repudiandae quaerat assumenda,
+            distinctio harum sapiente expedita quod reprehenderit in obcaecati
+            totam dolore cupiditate nulla qui minima tempore deserunt eos.
+            Tenetur asperiores est, veniam quasi cupiditate deserunt! Dolore
+            provident numquam magni, repellat ducimus deleniti earum officiis
+            possimus corporis asperiores. Eaque, tempore eius reiciendis
+            perspiciatis, voluptate quasi debitis velit sequi veritatis aliquam
+            cupiditate repudiandae, ipsum quod eligendi ipsa. Provident ut
+            facere assumenda reiciendis error, rerum ea corrupti totam minus,
+            exercitationem magnam maiores dolore alias illum unde sed ducimus
+            officia quis placeat est. Corrupti quibusdam similique tempore ipsam
+            illo. Eum deleniti, eius accusantium, eos consequuntur sunt nam
+            numquam voluptas sit et recusandae temporibus illum, esse nihil.
+            Totam excepturi suscipit, ipsum nisi quae adipisci aliquid
+            necessitatibus expedita delectus sit voluptatibus? Veniam quisquam
+            cum recusandae pariatur natus vel est exercitationem facere
+            consectetur assumenda deleniti veritatis ducimus debitis adipisci
+            accusamus eaque numquam, et non ipsum? Enim ipsa officiis
+            dignissimos soluta quaerat alias! Facilis cum, quos excepturi dolor
+            repellat harum! Veniam, exercitationem atque? Commodi optio magni
+            repudiandae at voluptatibus, voluptatem voluptates iusto accusamus
+            nisi excepturi! Nihil qui sed expedita maiores, voluptatibus ab
+            porro!
+        </div>
+        <div class="normal">normal flow</div>
+        <div class="fixed">fixed</div>
+    </body>
+</html>
