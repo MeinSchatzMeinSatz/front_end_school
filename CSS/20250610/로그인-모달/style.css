@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "SpoqaHanSansNeo-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+body {
+    background-color: #c4c4c4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal-container {
+    background-color: #ffffff;
+    width: 520px;
+    height: 712px;
+    border-radius: 10px;
+}
+
+/* 공통속성 */
+.loginbox {
+    width: 472px;
+    height: 50px;
+    border: solid 1px #c4c4c4;
+    margin-left: 24px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* header */
+.title-box {
+    border: solid 1px #c4c4c4;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.title-box p {
+    font-weight: 500;
+}
+
+.title-box button {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+}
+
+.title-box button img {
+    width: 16px;
+    height: 16px;
+}
+
+/* main */
+.login-titlebox p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 26px 24px 24px;
+}
+
+.checkbox {
+    margin-top: 16px;
+    margin-left: 28px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.submit-button {
+    width: 100%;
+    height: 100%;
+    background-color: #2f80ed;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.new-id {
+    width: 205px;
+    height: 18px;
+    margin-left: 158px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #767676;
+}
+
+/* article login-way */
+.login-way p {
+    display: flex;
+    align-items: center;
+    --gap: 1rem;
+    margin-top: 30px;
+}
+
+/* 구분선 설정하는 법 선생님 방법 참고하자ㅜㅠ */
+.login-way p::before,
+.login-way p::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.login-way p::before {
+    margin-right: var(--gap);
+}
+
+.login-way p::after {
+    margin-left: var(--gap);
+}
+
+.google {
+    margin-top: 20px;
+    border-color: #767676;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.facebook {
+    border-color: #2d9cdb;
+}
+
+.naver {
+    border-color: #00bf18;
+}
+
+.kakao {
+    border-color: #f2c94c;
+}

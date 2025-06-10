@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>로그인 모달 완성하기</title>
+        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main>
+            
+                <div class="title-container">
+                    <h1>로그인 또는 회원가입</h1>
+                    <button class="exit-button">
+                        <img src="./img/close.png" alt="close button" />
+                    </button>
+                </div>
+                <!-- 구분선 넣기 -->
+                <hr />
+                <article>
+                    <div class="login-container">
+                        <p>위니브에서 여러분의 궁금증을 해결하세요! C:</p>
+                        <form action="/" method="/">
+                            <div class="box id">
+                                <label for="login--ID" class="sr-only"
+                                    >아이디를 기입하세요</label
+                                >
+                                <input
+                                    placeholder="아이디"
+                                    type="text"
+                                    id="login--Id"
+                                    name="loginId"
+                                    required
+                                />
+                            </div>
+                            <div class="box pw">
+                                <label for="login--pw" class="sr-only"
+                                    >비밀번호를 기입하세요.</label
+                                >
+                                <input
+                                    placeholder="비밀번호"
+                                    type="password"
+                                    id="login--pw"
+                                    name="loginPw"
+                                    required
+                                />
+                            </div>
+                            <div class="set-login">
+                                <div class="item-choice">
+                                    <span>
+                                        <!-- 여기 왜 벨류값을 false을 준거지? -->
+                                        <input
+                                            type="checkbox"
+                                            id="saveSignedIn-or-not"
+                                            name="saveSignedIn"
+                                            value="false"
+                                        />
+                                        <label
+                                            for="saveSignedIn-or-not"
+                                            id="label-saveSignedIn"
+                                            >로그인 상태 유지</label
+                                        >
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="box submit">
+                                <label for="submitIdAndPw" class="sr-only"
+                                    >아이디 제출 버튼</label
+                                >
+                                <input
+                                    type="submit"
+                                    id="submitIdAndPw"
+                                    name="submitbutton"
+                                    value="로그인"
+                                />
+                            </div>
+                            <div class="option-box">
+                                <span>
+                                    <a href="#">회원가입</a>
+                                </span>
+                                <span>&nbsp;|&nbsp; </span>
+                                <span>
+                                    <a href="#">아이디/비밀번호 찾기</a>
+                                </span>
+                            </div>
+                            <div class="divider">
+                                <p>또는</p>
+                            </div>
+                            <div class="login-option-box">
+                                <button class="login-option">
+                                    <img
+                                        src="./img/Google__G__Logo 1.png"
+                                        alt="구글"
+                                    />구글 계정으로 로그인
+                                </button>
+                                <button class="login-option">
+                                    <img
+                                        src="./img/facebook.png"
+                                        alt="페이스북"
+                                    />페이스북 계정으로 로그인
+                                </button>
+                                <button class="login-option">
+                                    <img
+                                        src="./img/naver-logo.png"
+                                        alt="네이버"
+                                    />네이버 계정으로 로그인
+                                </button>
+
+                                <button class="login-option">
+                                    <img
+                                        src="./img/message-circle.png"
+                                        alt="카카오톡"
+                                    />카카오톡 계정으로 로그인
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                
+            </header>
+        </main>
+    </body>
+</html>
