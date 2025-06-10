@@ -6,20 +6,16 @@
     font-style: normal;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 body {
     font-family: "SpoqaHanSansNeo-Regular", sans-serif;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
 }
 
 article {
-    border: solid 2px black;
     width: 400px;
-    height: 200px;
 }
 
 /* .login-container */
@@ -27,11 +23,10 @@ article {
     border: solid 1px #dbdbdb;
     border-radius: 5px;
     width: 350px;
-    height: 140px;
     margin: 30px 25px;
 }
 
-p {
+.welcome-greeting {
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
@@ -57,18 +52,17 @@ button img {
 
 /* .additional-container */
 .additional-container {
-    border: solid 1px blue;
     display: flex;
     justify-content: space-between;
+    margin: 16px;
 }
 
-.additional .box1 {
-    border: solid 1px green;
+.box1 {
     width: 133px;
     height: 16px;
 }
 
-.additional .box2 {
+.box2 {
     width: 65px;
     height: 16px;
 }
@@ -81,5 +75,11 @@ button img {
 
 .additional a {
     font-size: 12px;
+    color: #767676;
+}
+
+.box1 a,
+.box1 p {
+    display: inline;
     color: #767676;
 }
