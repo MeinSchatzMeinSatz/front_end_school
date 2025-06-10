@@ -78,6 +78,7 @@ body {
     margin: 26px 24px 24px;
 }
 
+/* 이 부분 수정 */
 .checkbox {
     margin-top: 16px;
     margin-left: 28px;
@@ -111,7 +112,7 @@ body {
     display: flex;
     align-items: center;
     --gap: 1rem;
-    margin-top: 30px;
+    margin: 30px 24px 0px;
 }
 
 /* 구분선 설정하는 법 선생님 방법 참고하자ㅜㅠ */
