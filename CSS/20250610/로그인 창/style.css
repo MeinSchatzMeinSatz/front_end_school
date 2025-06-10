@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "SpoqaHanSansNeo-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: "SpoqaHanSansNeo-Regular", sans-serif;
+}
+
+article {
+    border: solid 2px black;
+    width: 400px;
+    height: 200px;
+}
+
+/* .login-container */
+.login-container {
+    border: solid 1px #dbdbdb;
+    border-radius: 5px;
+    width: 350px;
+    height: 140px;
+    margin: 30px 25px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    margin-top: 19px;
+    margin-left: 16px;
+}
+
+/* button */
+button {
+    border-radius: 4px;
+    width: 318px;
+    height: 40px;
+    background-color: #711bff;
+    margin-top: 16px;
+    margin-left: 16px;
+    color: #ffffff;
+}
+
+button img {
+    width: 102px;
+    height: 18px;
+}
+
+/* .additional-container */
+.additional-container {
+    border: solid 1px blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional .box1 {
+    border: solid 1px green;
+    width: 133px;
+    height: 16px;
+}
+
+.additional .box2 {
+    width: 65px;
+    height: 16px;
+}
+
+.additional img {
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.additional a {
+    font-size: 12px;
+    color: #767676;
+}
