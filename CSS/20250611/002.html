@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>grid auto-fill, auto-fit</title>
+        <style>
+            .container {
+                display: grid;
+                gap: 10px;
+                /* 행간 열간 */
+                gap: 10px 30px;
+                padding: 10px;
+            }
+
+            /* 가능한 한 많은 트랙을 생성하기 떄문에 여유공간이 생겨 */
+            .auto-fill {
+                background-color: lightblue;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+
+            /* 아이템이 빈트랙을 채워, 여백을 아이템들이 가져간다. */
+            .auto-fit {
+                background-color: lightpink;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+
+            .item {
+                background-color: black;
+                color: #fff;
+                font-size: 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container auto-fill">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+
+        <div class="container auto-fit">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </body>
+</html>
