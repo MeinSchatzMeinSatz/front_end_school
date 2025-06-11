@@ -1,0 +1,82 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+    --main--color: #29363d;
+    --sub-color: #5a6a72;
+}
+
+body {
+    font-family: "Pretendard";
+    font-weight: 400;
+    color: var(--main--color);
+    background-color: #f9f9f9;
+}
+
+/* 공동 속성 */
+
+article {
+    /* width: 288px; */
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    /* margin: 20px; */
+}
+
+.read-more {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+    width: 70px;
+    padding: 3px 6px;
+    display: block;
+}
+
+.multi-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* card */
+
+.card img {
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.text-group {
+    padding: 20px 16px 16px;
+}
+
+.text-group h2 {
+    font-family: "Pretendard";
+    font-weight: 700;
+}
+
+.text-group p {
+    margin: 16px 0;
+    font-size: 12px;
+    line-height: 160%;
+    color: var(--sub-color);
+}
+
+/* grid 정렬 */
+.container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    gap: 24px;
+    margin: 20px;
+    /* overflow-x: hidden; */
+}
