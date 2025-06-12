@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            @keyframes move-licat {
+                to {
+                    background-position: right 0;
+                }
+            }
+            @keyframes six-three-building {
+                to {
+                    background-position: right 0;
+                }
+            }
+            .licat {
+                width: 168px;
+                height: 200px;
+                background: url("./img/licat.png") no-repeat 0 0 / auto 100%;
+                animation: move-licat 0.8s infinite steps(6);
+            }
+            .cafe {
+                width: 113px;
+                height: 176px;
+                background: url(./img/building1.png) no-repeat 0 0 / auto 100%;
+                animation: six-three-building 2s infinite steps(33);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="licat"></div>
+        <div class="cafe"></div>
+    </body>
+</html>

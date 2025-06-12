@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            @keyframes clock-niddle {
+                0% {
+                    transform-origin: left center;
+                }
+                100% {
+                    transform-origin: left center;
+                    transform: rotate(360deg);
+                }
+            }
+            .clockbackground {
+                margin: 30px;
+                width: 50vw;
+                border-radius: 30px;
+                position: relative;
+                overflow: hidden;
+            }
+            .clockbackground img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .clockbackground div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                animation-name: clock-niddle;
+
+                animation-iteration-count: infinite;
+                /* animation-timing-function: linear; */
+            }
+            .time {
+                width: 30%;
+                height: 14px;
+                background-color: rgb(218, 203, 123);
+                border: 3px solid silver;
+                animation-duration: 360s;
+                animation-timing-function: steps(60);
+            }
+            .minute {
+                width: 45%;
+                height: 10px;
+                background-color: rgb(207, 178, 111);
+                animation-duration: 60s;
+                animation-timing-function: steps(60);
+            }
+            .second {
+                width: 40%;
+                height: 5px;
+                background-color: rgb(207, 176, 114);
+                border: 1px solid rgb(89, 80, 29);
+                border-radius: 10px;
+                animation-duration: 5s;
+                animation-timing-function: steps(60);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="clockbackground">
+            <img
+                src="https://i.pinimg.com/736x/9b/e0/0e/9be00e66e1ae4466d5e83b84958bc5cd.jpg"
+                alt=""
+            />
+            <div class="time"></div>
+            <div class="minute"></div>
+            <div class="second"></div>
+        </div>
+    </body>
+</html>
