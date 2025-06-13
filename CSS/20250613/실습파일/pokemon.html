@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            @keyframes pokemon-slider {
+                from {
+                    transform: rotateY(0deg);
+                }
+                to {
+                    transform: rotateY(360deg);
+                }
+            }
+
+            body {
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .pokemon {
+                height: 100vh;
+                perspective: 600px;
+                perspective-origin: 50% 50%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .slider {
+                animation: pokemon-slider 10s linear infinite;
+                position: relative;
+                transform-style: preserve-3d;
+                transform-origin: 50% 50%;
+                transform: translateZ(0);
+                width: 100px;
+                height: 100px;
+            }
+
+            .ev,
+            .jammanbo,
+            .mazayoung,
+            .mobugi,
+            .nayaong,
+            .pulin,
+            .weirdseed {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+            }
+            .ev {
+                background-image: url(./images/ev.png);
+                transform: rotateY(0) translateZ(111.5px);
+            }
+            .jammanbo {
+                background-image: url(./images/jammanbo.png);
+                transform: rotateY(51deg) translateZ(111.5px);
+            }
+            .mazayoung {
+                background-image: url(./images/mazayoung.png);
+                transform: rotateY(102deg) translateZ(111.5px);
+            }
+            .mobugi {
+                background-image: url(./images/mobugi.png);
+                transform: rotateY(153deg) translateZ(111.5px);
+            }
+            .nayaong {
+                background-image: url(./images/nyaong.png);
+                transform: rotateY(204deg) translateZ(111.5px);
+            }
+            .pulin {
+                background-image: url(./images/pulin.png);
+                transform: rotateY(255deg) translateZ(111.5px);
+            }
+            .weirdseed {
+                background-image: url(./images/weirdseed.png);
+                transform: rotateY(306deg) translateZ(111.5px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pokemon">
+            <div class="slider">
+                <div class="ev"></div>
+                <div class="jammanbo"></div>
+                <div class="mazayoung"></div>
+                <div class="mobugi"></div>
+                <div class="nayaong"></div>
+                <div class="pulin"></div>
+                <div class="weirdseed"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* @keyframes pokemon-slider {
+                from {
+                    transform: translate(50vw);
+                }
+
+                to {
+                    transform: translate(100vw);
+                }
+            } */
+
+            /* @keyframes pokemon-rotate {
+                from {
+                    transform: rotateY(0deg);
+                }
+
+                to {
+                    transform: rotateY(360deg);
+                }
+            } */
+
+            .pokemon {
+                perspective: 1000px;
+                animation: pokemon-slider 10s linear infinite reverse;
+            }
+            .slider {
+                display: flex;
+                gap: 20px;
+            }
+            .poke {
+                width: 200px;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                animation: pokemon-rotate 10s linear infinite reverse;
+                transform: translateZ(calc(700 / 3.14 / 2));
+            }
+
+            .ev {
+                background-image: url(./images/ev.png);
+            }
+            .jammanbo {
+                background-image: url(./images/jammanbo.png);
+                animation-delay: 1s;
+            }
+            .mazayoung {
+                background-image: url(./images/mazayoung.png);
+                animation-delay: 2s;
+            }
+            .mobugi {
+                background-image: url(./images/mobugi.png);
+                animation-delay: 3s;
+            }
+            .nayaong {
+                background-image: url(./images/nyaong.png);
+                animation-delay: 4s;
+            }
+            .pulin {
+                background-image: url(./images/pulin.png);
+                animation-delay: 5s;
+            }
+            .weirdseed {
+                background-image: url(./images/weirdseed.png);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pokemon">
+            <div class="slider">
+                <div class="poke ev"></div>
+                <div class="poke jammanbo"></div>
+                <div class="poke mazayoung"></div>
+                <div class="poke mobugi"></div>
+                <div class="poke nayaong"></div>
+                <div class="poke pulin"></div>
+                <div class="poke weirdseed"></div>
+            </div>
+        </div>
+    </body>
+</html>
