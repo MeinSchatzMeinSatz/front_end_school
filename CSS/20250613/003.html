@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3d</title>
+        <style>
+            .container {
+                perspective: 500px;
+                padding: 100px;
+            }
+
+            .item {
+                width: 200px;
+                height: 200px;
+                background-color: lightblue;
+                transition: all 1s;
+            }
+
+            .item:hover {
+                /* transform: translateZ(100px); */
+                /* transform: rotateX(45deg);
+                transform: rotateY(45deg);
+                transform: rotateZ(45deg); */
+
+                transform: scaleX(2);
+                transform: scaleY(2);
+                transform: scaleZ(2);
+
+                transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item"></div>
+        </div>
+    </body>
+</html>

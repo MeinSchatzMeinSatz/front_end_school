@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3D</title>
+        <style>
+            .container {
+                display: flex;
+                gap: 50px;
+                background-color: #eee;
+
+                /* 3D 공간의 깊이 (z축 선상의 사용자의 위치 지정) */
+                /* 직계 자식요소한테만 영향을 미침 */
+                /* 음수값 사용 x */
+                perspective: 500px;
+                perspective: 100px;
+                /* perspective: 1000px; */
+            }
+
+            .item {
+                width: 150px;
+                height: 100px;
+                background-color: lightblue;
+                border: solid 1px black;
+
+                transform: rotateZ(30deg);
+                /* transform: rotate(30deg);
+                이는 rotateZ의 단축형이다. */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </body>
+</html>
