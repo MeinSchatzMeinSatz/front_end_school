@@ -1,0 +1,204 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 1060px;
+    height: 1170px;
+    background-color: #f2f2f2;
+    border: solid 2px #bdbdbd;
+    border-radius: 10px;
+    margin-top: 86px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    vertical-align: center;
+    margin-top: 41px;
+}
+
+#header-line {
+    display: inline-block;
+    background-color: #bdbdbd;
+    width: 650px;
+    height: 1px;
+    margin: 37px 0px 28px;
+    margin-top: 37px;
+}
+
+.title-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 372px;
+    height: 19px;
+}
+
+.title-menu li {
+    font-size: 16px;
+    color: #828282;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 1003px;
+    height: 962px;
+    background-color: #ffffff;
+    border: solid 2px #bdbdbd;
+    border-radius: 10px;
+    margin: 28px 28px 31px 29px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 220px;
+    border-radius: 10px;
+    border: solid 2px #bdbdbd;
+
+    margin-top: 26px;
+    margin-left: 26px;
+}
+
+.poster {
+    border-radius: 10px;
+    width: 180px;
+    aspect-ratio: 1.8 / 2.5;
+    object-fit: cover;
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h3 {
+    margin-top: 11px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-top: 12px;
+}
+
+.content-info li::before {
+    font-size: 13px;
+    color: #828282;
+}
+
+.content-info :nth-child(1)::before {
+    content: "개요 ";
+}
+
+.content-info :nth-child(2)::before {
+    content: "개봉 ";
+}
+
+.content-info :nth-child(3)::before {
+    content: "출연 ";
+}
+
+.content-info :nth-child(4)::before {
+    content: "별점 ";
+}
+
+.button-box {
+    width: 220px;
+    height: 41px;
+
+    margin-top: 11px;
+}
+
+.reserve,
+.teaser {
+    width: 49%;
+
+    margin-bottom: 0;
+}
+
+.play {
+    width: 4px;
+    height: 5.33px;
+
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 213px;
+    margin-top: 135px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1 h2 {
+    margin-left: 364px;
+    margin-top: 53px;
+}
+
+.footer .img-box {
+    margin-right: 364px;
+    margin-top: 53px;
+}
+
+.footer-line {
+    width: 1189px;
+    border: solid 1px #c4c4c4;
+    margin-left: 364px;
+}
+
+.footer2 {
+    background-color: hotpink;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 36px;
+    margin-left: 364px;
+}
+
+.footer-nav ul li {
+    margin-left: 0;
+}
+
+.footer-nav ul li b {
+    font-weight: 700;
+}
+
+.footer-nav p {
+    margin-top: 36px;
+    margin-right: 364px;
+}
