@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>반려동물 소개하기</title>
         <style>
+           
 
             body {
                 height: 100vh;
@@ -28,12 +29,23 @@
                 width: 200px;
                 height: 300px;
                 border-radius: 10px;
+                border: solid 3px black;
 
                 transition: all 2s;
                 transform-style: preserve-3d;
                 position: relative;
+
+                animation: rotateY 5s cubic-bezier(0, 0, 0, 1.2) infinite;
+                
             }
 
+            .second {
+                animation-delay: 1s;
+            }
+
+            .third {
+                animation-delay: 2s;
+            }
             .item::before,
             .item::after {
                 position: absolute;

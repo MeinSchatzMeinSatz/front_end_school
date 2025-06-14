@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>포켓몬 슬라이드 실습</title>
+        <style>
+            @keyframes pokemon-slide {
+                to {
+                    transform: rotateY(360deg);
+                }
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .pokemon-box {
+                width: 100px;
+                height: 100px;
+
+                perspective: 1000px;
+                perspective-origin: center center;
+            }
+
+            .slider {
+                position: relative;
+
+                transform-origin: center center;
+                transform-style: preserve-3d;
+
+                animation: pokemon-slide 10s infinite linear;
+            }
+
+            .pokemon {
+                width: 200px;
+                height: 200px;
+                backface-visibility: hidden;
+
+                border: solid 2px black;
+                border-radius: 10px;
+                position: absolute;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+                aspect-ratio: 1/1;
+                object-fit: contain;
+            }
+
+            .ev {
+                transform: translateZ(calc(1400px / 3.14 / 2));
+            }
+
+            .jam {
+                transform: rotateY(calc(360deg / 7))
+                    translateZ(calc(1400px / 3.14 / 2));
+            }
+
+            .maz {
+                transform: rotateY(calc(360deg / 7 * 2))
+                    translateZ(calc(1400px / 3.14 / 2));
+            }
+
+            .mob {
+                transform: rotateY(calc(360deg / 7 * 3))
+                    translateZ(calc(1400px / 3.14 / 2));
+            }
+
+            .nya {
+                transform: rotateY(calc(360deg / 7 * 4))
+                    translateZ(calc(1400px / 3.14 / 2));
+            }
+
+            .pulin {
+                transform: rotateY(calc(360deg / 7 * 5))
+                    translateZ(calc(1400px / 3.14 / 2));
+            }
+            .seed {
+                transform: rotateY(calc(360deg / 7 * 6))
+                    translateZ(calc(1400px / 3.14 / 2));
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pokemon-box">
+            <div class="slider">
+                <div class="pokemon ev">
+                    <img src="./images/ev.png" alt="" />
+                </div>
+                <div class="pokemon jam">
+                    <img src="./images/jammanbo.png" alt="" />
+                </div>
+                <div class="pokemon maz">
+                    <img src="./images/mazayoung.png" alt="" />
+                </div>
+                <div class="pokemon mob">
+                    <img src="./images/mobugi.png" alt="" />
+                </div>
+                <div class="pokemon nya">
+                    <img src="./images/nyaong.png" alt="" />
+                </div>
+                <div class="pokemon pulin">
+                    <img src="./images/pulin.png" alt="" />
+                </div>
+                <div class="pokemon seed">
+                    <img src="./images/weirdseed.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
