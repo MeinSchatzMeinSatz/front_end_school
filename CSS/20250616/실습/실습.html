@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>미디어 쿼리 실습</title>
+        <style>
+            @font-face {
+                font-family: "SpoqaHanSansNeo-Regular";
+                src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+                    format("woff");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            body {
+                font-family: "SpoqaHanSansNeo-Regular", sans-serif;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            main {
+                display: grid;
+
+                grid-template-areas:
+                    "para edu"
+                    "para book";
+                column-gap: 102px;
+                row-gap: 20px;
+            }
+
+            .para {
+                grid-area: para;
+            }
+
+            strong {
+                font-weight: 700px;
+            }
+
+            .title-para {
+                font-size: 70px;
+
+                width: 612;
+                overflow: hidden;
+
+                margin-bottom: 20px;
+            }
+
+            .untitle-para {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            .edu {
+                background-image: url(./이미지/Rectangle\ 2.png);
+            }
+
+            .book {
+                background-image: url(./이미지/Rectangle\ 3.png);
+            }
+
+            .IT {
+                width: 486px;
+                height: 280px;
+                object-fit: contain;
+
+                border-radius: 16px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .IT-para {
+                font-weight: 700px;
+                font-size: 30px;
+                color: #fff;
+                margin-left: 30px;
+            }
+
+            .IT-a {
+                text-decoration: none;
+                font-size: 16px;
+                vertical-align: middle;
+                margin: 30px;
+                color: #fff;
+
+                align-self: flex-end;
+            }
+
+            /* 테블릿 모드 */
+            @media (min-width: 390px) and (max-width: 768px) {
+                body {
+                    justify-content: flex-start;
+                }
+
+                main {
+                    display: grid;
+
+                    grid-template-areas:
+                        "para para"
+                        "edu book";
+                    column-gap: 20px;
+                    row-gap: 20px;
+                }
+
+                .untitle-para {
+                    line-height: 26px;
+                }
+
+                .IT {
+                    width: 344px;
+                    height: 198px;
+                }
+
+                .IT-para {
+                    font-size: 24px;
+                }
+
+                IT-a {
+                    font-size: 16px;
+                }
+            }
+
+            /* 모바일 모드 */
+            @media (max-width: 389px) {
+                main {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .title-para {
+                    font-size: 36px;
+                }
+
+                .untitle-para {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .IT {
+                    width: 356px;
+                    height: 205px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="para">
+                <p class="title-para">
+                    위니브에서<br />
+                    <strong>함께 콘텐츠 제작하실<br />분을 모십니다.</strong>
+                </p>
+                <p class="untitle-para">
+                    <strong>위니브</strong>는 ICT 연구 및 (코딩) 교육기관이며<br />
+                    다양한 사회 공헌 활동을 하고 있습니다.
+                </p>
+            </div>
+
+            <div class="IT edu">
+                <p class="IT-para">IT 교육 영상 콘텐츠</p>
+                <a href="#" class="IT-a">바로가기 ></a>
+            </div>
+            <div class="IT book">
+                <p class="IT-para">IT 서적</p>
+                <a href="#" class="IT-a">바로가기 ></a>
+            </div>
+        </main>
+    </body>
+</html>
