@@ -10,6 +10,22 @@
     clip: rect(0 0 0 0);
 }
 
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+        format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Pretendard-Regular", sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -17,16 +33,40 @@ header {
 
 .article-box {
     position: relative;
+    width: 39rem;
+    height: 24rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .article-box img {
     position: absolute;
+    z-index: -10;
 }
 
 .article-box .para1 {
-    position: absolute;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px 8px;
+    width: 34.4rem;
+    height: 10px;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2e6ff2;
+
+    display: inline;
 }
 
 .article-box .para2 {
-    position: absolute;
+    width: 158px;
+    height: 24px;
+
+    font-size: 18px;
+    font-weight: 700px;
+    line-height: 24px;
+
+    display: inline;
 }
