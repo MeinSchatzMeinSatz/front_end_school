@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <h1>세 수 중 최솟값</h1>
+    <p>
+      100 이하의 자연수 A, B, C를 입력받아 세 수 중 가장 작은 값을 출력하는
+      프로그램을 작성하세요.(정렬을 사용하면 안된다.)
+    </p>
+    <script>
+      function solution(a, b, c) {
+        let answer;
+
+        // answer = Math.min(a, b, c)
+
+        // 선생님의 풀이
+        // 우선 a 와 b를 비교하고서 둘 중 작은 값을 갖고 c와 비교하기
+        if (a < b) answer = a;
+        else answer = b;
+        if (c < answer) answer = c;
+
+        return answer;
+      }
+
+      console.log(solution(2, 5, 1));
+      console.log(`정답은 : ${solution(6, 5, 11)}`);
+    </script>
+  </body>
+</html>
