@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문단과 목록 스타일</title>
+    <style>
+      body {
+        display: flex;
+        gap: 3px;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        width: 300px;
+        height: 500px;
+        flex-shrink: 0;
+      }
+
+      .box strong {
+        font-weight: 900;
+      }
+
+      .box i {
+        color: lightcoral;
+      }
+
+      .box1 {
+        text-align: left;
+        letter-spacing: 10px;
+      }
+
+      .box2 {
+        text-align: right;
+        word-spacing: 10px;
+      }
+
+      .box3 {
+        text-align: center;
+        line-height: 20px;
+      }
+
+      .box4 {
+        text-align: justify;
+      }
+
+      .ex_sent {
+        text-indent: -0.5em;
+
+        letter-spacing: 0;
+        word-spacing: 0;
+        line-height: 1.5em;
+      }
+
+      ul {
+        list-style: circle;
+      }
+
+      /* li별로 지정하는 것도 가능 */
+      ul > li:first-child {
+        list-style: "🚩 ";
+      }
+
+      ol {
+        list-style: lower-alpha;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">
+      <h1>정렬과 간격</h1>
+      <p>
+        <strong>text-align</strong> 속성은 텍스트의 정렬 방식을 지정합니다.
+        직관적으로 알 수 있듯 <i>left</i>는 왼쪽, <i>center</i>는 가운데,
+        <i>right</i>는 오른쪽으로 텍스트(및 인라인 요소들)를 정렬한다.
+        <i>justify</i>는 왼쪽으로 정렬하면서 텍스트가 여러 줄이 될 때 마지막
+        줄을 제외한 줄들의 오른쪽이 나란히 되도록 각 줄의 공간을 조절한다.
+      </p>
+      <br />
+      <p>
+        <strong>letter-spacing</strong>으로는 자간,
+        <strong>word-spacing</strong>으로는 단어 간격,
+        <strong>line-height</strong>로는 줄 높이를 조절할 수 있다.
+      </p>
+    </div>
+    <div class="box box2">
+      <h1>정렬과 간격</h1>
+      <p>
+        <strong>text-align</strong> 속성은 텍스트의 정렬 방식을 지정합니다.
+        직관적으로 알 수 있듯 <i>left</i>는 왼쪽, <i>center</i>는 가운데,
+        <i>right</i>는 오른쪽으로 텍스트(및 인라인 요소들)를 정렬한다.
+        <i>justify</i>는 왼쪽으로 정렬하면서 텍스트가 여러 줄이 될 때 마지막
+        줄을 제외한 줄들의 오른쪽이 나란히 되도록 각 줄의 공간을 조정한다.
+      </p>
+      <br />
+      <p>
+        <strong>letter-spacing</strong>으로는 자간,
+        <strong>word-spacing</strong>으로는 단어 간격,
+        <strong>line-height</strong>로는 줄 높이를 조절할 수 있다.
+      </p>
+    </div>
+    <div class="box box3">
+      <h1>정렬과 간격</h1>
+      <p>
+        <strong>text-align</strong> 속성은 텍스트의 정렬 방식을 지정합니다.
+        직관적으로 알 수 있듯 <i>left</i>는 왼쪽, <i>center</i>는 가운데,
+        <i>right</i>는 오른쪽으로 텍스트(및 인라인 요소들)를 정렬한다.
+        <i>justify</i>는 왼쪽으로 정렬하면서 텍스트가 여러 줄이 될 때 마지막
+        줄을 제외한 줄들의 오른쪽이 나란히 되도록 각 줄의 공간을 조정한다.
+      </p>
+      <br />
+      <p>
+        <strong>letter-spacing</strong>으로는 자간,
+        <strong>word-spacing</strong>으로는 단어 간격,
+        <strong>line-height</strong>로는 줄 높이를 조절할 수 있다.
+      </p>
+    </div>
+    <div class="box box4">
+      <h1>정렬과 간격</h1>
+      <p>
+        <strong>text-align</strong> 속성은 텍스트의 정렬 방식을 지정합니다.
+        직관적으로 알 수 있듯 <i>left</i>는 왼쪽, <i>center</i>는 가운데,
+        <i>right</i>는 오른쪽으로 텍스트(및 인라인 요소들)를 정렬한다.
+        <i>justify</i>는 왼쪽으로 정렬하면서 텍스트가 여러 줄이 될 때 마지막
+        줄을 제외한 줄들의 오른쪽이 나란히 되도록 각 줄의 공간을 조정한다.
+      </p>
+      <br />
+      <p>
+        <strong>letter-spacing</strong>으로는 자간,
+        <strong>word-spacing</strong>으로는 단어 간격,
+        <strong>line-height</strong>로는 줄 높이를 조절할 수 있다.
+      </p>
+    </div>
+    <p class="ex_sent">
+      소년은 개울가에서 소녀를 보자 곧 윤 초시네 증손녀(曾孫女)딸이라는 걸 알 수
+      있었다. 소녀는 개울에다 손을 잠그고 물장난을 하고 있는 것이다. 서울서는
+      이런 개울물을 보지 못하기나 한 듯이. 벌써 며칠째 소녀는, 학교에서 돌아오는
+      길에 물장난이었다. 그런데, 어제까지 개울 기슭에서 하더니, 오늘은 징검다리
+      한가운데 앉아서 하고 있다. 소년은 개울둑에 앉아 버렸다. 소녀가 비키기를
+      기다리자는 것이다.
+    </p>
+    <ul>
+      <li>ul 아이템 1</li>
+      <li>ul 아이템 2</li>
+      <li>ul 아이템 3</li>
+    </ul>
+    <ol>
+      <li>li 아이템 1</li>
+      <li>li 아이템 2</li>
+      <li>li 아이템 3</li>
+    </ol>
+  </body>
+</html>
