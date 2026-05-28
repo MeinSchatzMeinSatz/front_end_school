@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>블록요소와 인라인요소</title>
+    <style>
+      .block {
+        padding: 20px;
+        background-color: lightblue;
+      }
+
+      .block p {
+        background-color: lightcoral;
+      }
+
+      .inline {
+        padding: 20px;
+        background-color: lightgreen;
+      }
+
+      .inline span {
+        background-color: yellow;
+      }
+
+      .practice {
+        background-color: blanchedalmond;
+      }
+
+      .practice span {
+        background-color: lightcoral;
+      }
+
+      .practice div {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>블록 요소와 인라인 요소</h1>
+    <div class="block">
+      <p>블록 요소</p>
+      는 딱딱한 상자와도 같다. 이 파란색 상자처럼 사각형의 형태를 갖고 있으며
+      너비와 높이, 안팎의 간격을 부여받을 수 있다.
+    </div>
+    <div class="inline">
+      반면 <span>인라인 요소</span>는 비닐이나 랩 안에 내용물을 넣은것과도 같다.
+      <span
+        >이 텍스트처럼, 일정한 바깥 형태나 껍데기 없이 페이지의 흐름에
+        따라</span
+      >
+      다른 텍스트나 컨텐츠와 어우러져 배치된다. 위의 노란 부분이 인라인
+      요소이다.
+    </div>
+    <div class="practice">
+      <span>span</span>
+      <div>div</div>
+      <span>span</span>
+      <span>span</span>
+      <div>div</div>
+      <div>div</div>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <p>텍스트 사이에 들어있는 <span>span</span>요소입니다.</p>
+      <div>div요소 안에 들어있는 <span>span</span>요소입니다.</div>
+      <span
+        >span요소 안에 들어있는
+        <div>div요소</div>
+        입니다.</span
+      >
+    </div>
+  </body>
+</html>
