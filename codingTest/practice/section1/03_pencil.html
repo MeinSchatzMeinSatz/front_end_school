@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연필 개수</title>
+  </head>
+  <body>
+    <h1>연필 개수</h1>
+    <h2>문제 설명</h2>
+    <p>
+      연필 1다스는 12자루이다. 학생 1인당 1자루씩 나누어준다고 할때 N명의
+      학생수를 입력하면 필요한 연필의 다스 수를 계산하는 프로그램을 작성하시오.
+    </p>
+
+    <script>
+      function solution(n) {
+        let answer;
+        answer = Math.ceil(n / 12);
+        return answer;
+      }
+
+      console.log(solution(178));
+    </script>
+  </body>
+</html>
