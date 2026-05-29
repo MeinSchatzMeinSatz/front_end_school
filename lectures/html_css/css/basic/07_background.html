@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경 꾸미기</title>
+    <style>
+      /* 1. 이미지를 배경에 적용하기
+      background-repeat 속성을 통해 이미지의 반복여부 결정
+      background-size 속성을 통해 부모요소에 맞게 조절 가능
+        cover: 부모 요소의 너비와 높이에 딱 맞게 조절
+        contain: 부모 요소의 너비와 높이 중 짧은 부분에 맞게 조절
+      */
+      .canvas {
+        width: 100vw;
+        height: 50vh;
+        background-image: url(./img/orange-tile2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      /* 2. 예시 이미지를 갖고 둥근 프로필 요소를 만들자. */
+      .outer {
+        width: 200px;
+        height: 200px;
+        background-color: #eee;
+      }
+
+      .with-bg {
+        background-image: url(./img/mona-lisa.jpg);
+        height: 100%;
+
+        border-radius: 50%;
+        background-size: cover;
+      }
+
+      /* 2. 예시 이미지를 갖고 둥근 프로필 요소를 만들자. */
+      .outer2 {
+        width: 200px;
+        height: 200px;
+        background-color: #eee;
+
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .with-bg2 {
+        background-image: url(./img/mona-lisa.jpg);
+        height: 100%;
+
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1. 이미지를 배경에 사용하기</h2>
+    <div class="canvas"></div>
+
+    <h2>2. 예시 이미지로 둥근 프로필 요소를 만들자.</h2>
+    <div class="outer">
+      <div class="with-bg"></div>
+    </div>
+
+    <h2>2-1. 바깥 컨테이너를 통해 이미지 크기 조절하기</h2>
+    <div class="outer2">
+      <div class="with-bg2"></div>
+    </div>
+  </body>
+</html>
