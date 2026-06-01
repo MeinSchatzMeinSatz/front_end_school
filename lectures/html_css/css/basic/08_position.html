@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08_position</title>
+    <style>
+      .parent {
+        width: 518px;
+        height: 518px;
+        border: 2px solid #ddd;
+        padding: 12px 0 0 12px;
+        position: relative;
+      }
+
+      .box {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        margin: 0 8px 5px 0;
+        background-color: lightgray;
+      }
+
+      .box_yellow {
+        background-color: yellow;
+        /* position: absolute;
+
+        top: 30px;
+        left: 30px; */
+      }
+
+      .box_orange {
+        width: 30px;
+        height: 30px;
+        background-color: orange;
+      }
+
+      /* z-index */
+      .color_box {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+      }
+
+      .color_box1 {
+        background-color: orange;
+        position: absolute;
+        z-index: 20;
+      }
+
+      .color_box2 {
+        background-color: blue;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 10;
+      }
+
+      .color_box3 {
+        background-color: green;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 30;
+      }
+
+      /* 실습 */
+      .child {
+        width: 300px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        background-color: skyblue;
+
+        position: absolute;
+        top: calc(50% - 40px);
+        left: calc(50% - 150px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>position</h1>
+    <div class="parent">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box box_yellow">
+        <div class="box_orange"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h1>z-index</h1>
+    <div class="parent">
+      <div class="color_box color_box1"></div>
+      <div class="color_box color_box2"></div>
+      <div class="color_box color_box3"></div>
+    </div>
+
+    <h1>실습</h1>
+    <div class="parent">
+      <div class="child">이 요소를 화면 가운데에 배치해보세요.</div>
+    </div>
+  </body>
+</html>
