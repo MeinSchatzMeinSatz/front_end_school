@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소들을 감추는 방법들</title>
+    <style>
+      .parent {
+        width: 518px;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .child1 {
+        background-color: lightcoral;
+        opacity: 0;
+      }
+
+      .child2 {
+        background-color: lightblue;
+        visibility: hidden;
+      }
+
+      .child3 {
+        background-color: lightgoldenrodyellow;
+        display: none;
+      }
+
+      .child4 {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>요소를 숨기는 세 가지 방법</h1>
+    <div class="parent">
+      <div class="child child1">opacity</div>
+      <div class="child child2">visibility</div>
+      <div class="child child3">display</div>
+      <div class="child child4">빈값</div>
+    </div>
+  </body>
+</html>
