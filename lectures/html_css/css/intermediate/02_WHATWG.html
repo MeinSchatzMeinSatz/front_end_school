@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aria-hidden</title>
+    <style>
+      .example {
+        margin-bottom: 16px;
+        font-size: 2em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example"><span aria-hidden="true">☺️</span> 반갑습니다!</div>
+    <p>
+      이모지나 SVG 요소 등을 스크린리더에게만 감추고 싶다면
+      <strong>aria-hidden</strong> 속성을 <em>true</em>로 만들어줍니다.
+    </p>
+
+    <div class="example">I <span>❤️</span> CODING!</div>
+    <p>
+      특정 정보를 나타내는 이모지나 SVG 요소등을 스크린 리더가 텍스트로 읽도록
+      하려면 <strong>role</strong> 속성으로 이미지임을 명시하고
+      <strong>aria-label</strong> 속성에 값을 넣습니다.
+    </p>
+  </body>
+</html>
