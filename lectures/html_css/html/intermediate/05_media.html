@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기타 미디어</title>
+  </head>
+  <body>
+    <h1>1. <strong>src</strong> 속성을 사용한 링크</h1>
+    <br />
+
+    <figure>
+      <figcaption class="sr-only">얄코 영상 오디오</figcaption>
+
+      <audio
+        src="https://showcases.yalco.kr/html-css-scoop/03-05/audio.mp3"
+        controls
+      ></audio>
+    </figure>
+
+    <br />
+
+    <figure>
+      <figcaption class="sr-only">얄코 영상 비디오</figcaption>
+
+      <video
+        src="https://showcases.yalco.kr/html-css-scoop/03-05/video.mp4"
+        controls
+      ></video>
+    </figure>
+
+    <h1>2. <strong>source</strong> 태그를 사용한 링크</h1>
+    <br />
+
+    <figure>
+      <figcaption class="sr-only">얄코 영상 오디오</figcaption>
+      <audio controls>
+        <source
+          src="https://showcases.yalco.kr/html-css-scoop/03-05/audio.mp3"
+          type="audio/mpeg"
+        />
+        <source
+          src="https://showcases.yalco.kr/html-css-scoop/03-05/audio.wav"
+          type="audio/wav"
+        />
+        <p>이 브라우저에서 오디오 태그가 지원되지 않습니다.</p>
+      </audio>
+    </figure>
+
+    <br />
+
+    <figure>
+      <figcaption class="sr-only">얄코 영상 비디오</figcaption>
+
+      <video controls>
+        <source
+          src="https://showcases.yalco.kr/html-css-scoop/03-05/video.mov"
+          type="video/quicktime"
+        />
+        <source
+          src="https://showcases.yalco.kr/html-css-scoop/03-05/video.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://showcases.yalco.kr/html-css-scoop/03-05/video.webm"
+          type="video/webm"
+        />
+        <p>이 브라우저에서 비디오 태그가 지원되지 않습니다.</p>
+      </video>
+    </figure>
+  </body>
+</html>
