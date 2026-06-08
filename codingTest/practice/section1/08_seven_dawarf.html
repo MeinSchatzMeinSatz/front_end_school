@@ -20,13 +20,10 @@
     <script>
       function solution(arr) {
         let answer = arr;
-        let sum = 0;
+        let sum = arr.reduce((a, b) => a + b, 0);
         let flag = 0; // flag의 존재!
 
-        for (let i = 0; i < arr.length; i++) {
-          sum += arr[i];
-        }
-
+        // 이중 for문을 통한 해결
         for (let i = 0; i < arr.length; i++) {
           for (let j = i + 1; j < arr.length; j++) {
             if (sum - arr[i] - arr[j] === 100) {
