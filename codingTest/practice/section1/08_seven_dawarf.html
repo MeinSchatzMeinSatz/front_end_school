@@ -9,7 +9,7 @@
     <h1>일곱 난쟁이</h1>
     <h2>문제 설명</h2>
     <p>
-      왕비를 피해 일곱 난쟁이들과 함꼐 평화롭게 생활하고 있던 백설공주에게
+      왕비를 피해 일곱 난쟁이들과 함께 평화롭게 생활하고 있던 백설공주에게
       위기가 찾아왔다. 일과를 마치고 돌아온 난쟁이가 일곱 명이 아닌 아홉명이었던
       것이다. 아홉명의 난쟁이는 모두 자신이 "백설 공주와 일곱 난쟁이"의
       주인공이라고 주장했다. 뛰어난 수학적 직관력을 가지고 있던 백설공주는,
@@ -21,6 +21,7 @@
       function solution(arr) {
         let answer = arr;
         let sum = 0;
+        let flag = 0; // flag의 존재!
 
         for (let i = 0; i < arr.length; i++) {
           sum += arr[i];
@@ -29,12 +30,17 @@
         for (let i = 0; i < arr.length; i++) {
           for (let j = i + 1; j < arr.length; j++) {
             if (sum - arr[i] - arr[j] === 100) {
-              answer.filter((_, idx) => idx !== i || j);
+              answer.splice(j, 1);
+              answer.splice(i, 1);
+              flag = 1;
+              break;
             }
           }
+
+          if (flag === 1) break;
         }
 
-        return sum;
+        return answer;
       }
 
       let arr = [22, 7, 21, 19, 10, 15, 25, 8, 13];
