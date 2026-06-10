@@ -1,14 +1,14 @@
 import "./App.css";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Practice3 from "./components/Practice3";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Header />
-      <Main />
       <Footer />
+      <Practice3 />
       <h1>안녕 React!</h1>
     </>
   );
