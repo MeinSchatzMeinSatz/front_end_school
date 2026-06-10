@@ -1,0 +1,12 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "node.js를 실습해보기 위한 npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
