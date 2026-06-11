@@ -1,9 +1,10 @@
 import "./App.css";
-import Register from "./components/chapter10/Register";
+import Hook from "./components/chapter11/Hook";
+
 function App() {
   return (
     <>
-      <Register />
+      <Hook />
     </>
   );
 }
