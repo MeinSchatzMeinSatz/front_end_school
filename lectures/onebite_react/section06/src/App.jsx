@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import State from "./components/chapter06/State";
+import Light from "./components/chapter07/Light";
 
 function App() {
   const [state, setState] = useState("초깃값");
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <State />
+      <Light />
     </>
   );
 }
