@@ -4,19 +4,20 @@
 // 3. 나만의 훅(Custom Hook)을 직접 만들 수 있다.
 
 import { useState } from "react";
+import useInput from "./hooks/useInput";
 
 // const state = useState(); // ...1
 
-function useInput() {
-  // 3.
-  const [input, setInput] = useState("");
+// function useInput() {
+//   // 3.
+//   const [input, setInput] = useState("");
 
-  const onChange = (e) => {
-    setInput(e.target.value);
-  };
+//   const onChange = (e) => {
+//     setInput(e.target.value);
+//   };
 
-  return [input, onChange];
-}
+//   return [input, onChange];
+// }
 
 const Hook = () => {
   // 2.
