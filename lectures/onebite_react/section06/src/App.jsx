@@ -1,13 +1,14 @@
 import "./App.css";
-import Button from "./components/chapter05/Button";
-import Header from "./components/Header";
+import { useState } from "react";
+import State from "./components/chapter06/State";
 
 function App() {
+  const [state, setState] = useState("초깃값");
+  console.log(state);
+
   return (
     <>
-      <Button text="비빔국수" />
-      <Button text="콩국수" />
-      <Button text="곱배기" />
+      <State />
     </>
   );
 }
