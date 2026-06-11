@@ -1,14 +1,9 @@
 import "./App.css";
-import { useState } from "react";
-import Light from "./components/chapter07/Light";
-
+import Register from "./components/chapter09/Register";
 function App() {
-  const [state, setState] = useState("초깃값");
-  console.log(state);
-
   return (
     <>
-      <Light />
+      <Register />
     </>
   );
 }
