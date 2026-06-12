@@ -13,7 +13,7 @@ const LifeCycle = () => {
 
   // 2. 업데이트: 변화, 리렌더링 -> 배열없이
   useEffect(() => {
-    // 진짜 업데이트 되었을떄 만 렌더링 되도록 설정(useRef를 사용)
+    // 진짜 업데이트 되었을때만 렌더링 되도록 설정(useRef를 사용)
     if (!isMount.current) {
       isMount.current = true;
       return;
