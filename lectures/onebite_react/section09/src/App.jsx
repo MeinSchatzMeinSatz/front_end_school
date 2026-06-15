@@ -32,7 +32,7 @@ function App() {
   const onCreate = (content) => {
     const newTodo = {
       id: idRef.current++,
-      isDon: false,
+      isDone: false,
       content: content,
       date: new Date().getTime(),
     };
