@@ -6,15 +6,13 @@
 
 function solution(arr) {
   // return [...new Set(arr)];
-  let answer = [];
-
-  for (let i = 0; i < arr.length; i++) {
-    if (!answer.includes(arr[i])) {
-      answer.push(arr[i]);
-    }
-  }
-
-  return answer;
+  // let answer = [];
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (!answer.includes(arr[i])) {
+  //     answer.push(arr[i]);
+  //   }
+  // }
+  // return answer;
 }
 
 const arr = ["good", "time", "good", "time", "time", "student"];
