@@ -5,6 +5,7 @@ import {
   useReducer,
   useCallback,
   createContext,
+  useMemo,
 } from "react";
 import Header from "./components/Header";
 import Editor from "./components/Editor";
@@ -46,7 +47,8 @@ function reducer(state, action) {
   }
 }
 
-export const TodoContext = createContext();
+export const TodoStateContext = createContext();
+export const TodoDispatchContext = createContext();
 
 function App() {
   const [todos, dispatch] = useReducer(reducer, mockData);
@@ -81,21 +83,24 @@ function App() {
   // const func = useCallback(() => {
   // }, []) // 함수를 메모이제이션 해주는 hook
 
+  const memoizedDispatch = useMemo(() => {
+    return {
+      onCreate,
+      onUpdate,
+      onDelete,
+    };
+  }, []);
+
   return (
     <>
       <div className="App">
         <Header />
-        <TodoContext.Provider
-          value={{
-            todos,
-            onCreate,
-            onUpdate,
-            onDelete,
-          }}
-        >
-          <Editor />
-          <List />
-        </TodoContext.Provider>
+        <TodoStateContext.Provider value={todos}>
+          <TodoDispatchContext.Provider value={memoizedDispatch}>
+            <Editor />
+            <List />
+          </TodoDispatchContext.Provider>
+        </TodoStateContext.Provider>
       </div>
     </>
   );
