@@ -14,9 +14,9 @@ const List = ({ todos }) => {
       return todos;
     }
 
-    return todos.filter((todo) => {
-      return todo.content.toLowerCase().includes(search.toLowerCase());
-    });
+    return todos.filter((todo) =>
+      todo.content.toLowerCase().includes(search.toLowerCase())
+    );
   };
 
   const filteredTodos = getFilteredData();
