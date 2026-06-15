@@ -6,12 +6,13 @@ function solution(str) {
   let length = str.length;
 
   if (length % 2) {
-    let idx = Math.ceil(length % 2);
+    let idx = Math.ceil(length / 2);
     return answer.slice(idx - 1, idx);
   } else {
-    let idx = length % 2;
-    return answer.slice(idx - 1, idx);
+    let idx = length / 2;
+    return answer.slice(idx - 1, idx + 1);
   }
 }
 
-console.log(solution("abce"));
+console.log(solution("abcefg"));
+console.log(solution("study"));
