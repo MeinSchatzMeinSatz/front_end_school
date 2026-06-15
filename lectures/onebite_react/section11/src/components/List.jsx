@@ -47,7 +47,7 @@ const List = ({ todos, onUpdate, onDelete }) => {
       doneCount,
       notDoneCount,
     };
-  }, []);
+  }, [todos]);
 
   return (
     <div className="List">
