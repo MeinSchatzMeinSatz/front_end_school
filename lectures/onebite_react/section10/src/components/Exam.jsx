@@ -15,7 +15,8 @@ function reducer(state, action) {
       return state + action.data;
     case "DECREASE":
       return state - action.data;
-
+    case "INIT": // 이렇게 기능을 확장 시킬 수 있다.
+      return 0;
     default:
       return state;
   }
@@ -42,11 +43,19 @@ const Exam = () => {
     });
   };
 
+  const onClickInit = () => {
+    dispatch({
+      type: "INIT",
+    });
+  };
+
   return (
     <div>
-      <h1>{state}</h1>
+      <h4>테스트 컴포넌트</h4>
+      <p>{state}</p>
       <button onClick={onClickPlus}>+</button>
       <button onClick={onClickMinus}>-</button>
+      <button onClick={onClickInit}>초기화</button>
     </div>
   );
 };
