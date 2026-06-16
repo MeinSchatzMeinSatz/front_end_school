@@ -4,25 +4,42 @@ import Home from "./pages/Home";
 import Diary from "./pages/Diary";
 import New from "./pages/New";
 import NotFound from "./pages/NotFound";
+import Button from "./components/Button";
+import Header from "./components/Header";
 
 import { getEmotionImage } from "./util/getEmotionImage";
 
 function App() {
   return (
     <>
-      <div>
-        <img src={getEmotionImage(1)} />
-        <img src={getEmotionImage(2)} />
-        <img src={getEmotionImage(3)} />
-        <img src={getEmotionImage(4)} />
-        <img src={getEmotionImage(5)} />
-      </div>
+      <Header
+        title={"Header"}
+        leftChild={<Button text={"Left"} />}
+        rightChild={<Button text={"Right"} />}
+      />
+      <Button
+        text={"123"}
+        type={"DEFAULT"}
+        onClick={() => {
+          console.log("123번 버튼 클릭");
+        }}
+      />
 
-      <div>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/new"}>New</Link>
-        <Link to={"/diary"}>Diary</Link>
-      </div>
+      <Button
+        text={"123"}
+        type={"POSITIVE"}
+        onClick={() => {
+          console.log("123번 버튼 클릭");
+        }}
+      />
+
+      <Button
+        text={"123"}
+        type={"NEGATIVE"}
+        onClick={() => {
+          console.log("123번 버튼 클릭");
+        }}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/new" element={<New />} />
