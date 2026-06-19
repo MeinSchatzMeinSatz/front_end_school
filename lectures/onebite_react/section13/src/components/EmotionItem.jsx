@@ -1,9 +1,10 @@
 import "./EmotionItem.css";
 import { getEmotionImage } from "../util/getEmotionImage";
 
-const EmotionItem = ({ emotionId, emotionName, isSelected }) => {
+const EmotionItem = ({ onClick, emotionId, emotionName, isSelected }) => {
   return (
     <div
+      onClick={onClick}
       className={`EmotionItem ${
         isSelected ? `EmotionItem_on_${emotionId}` : ""
       }`}
