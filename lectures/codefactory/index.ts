@@ -1,55 +1,77 @@
 /**
- * Types
+ * Enum
  */
-
-let helloText: string = "Hello";
-// helloText = true;
 
 /**
- * JS에 존재하는
- * 7개의 타입
+ * API 요청을 한다.
+ * 상태는 4가지 상태
+ *
+ * DONE: 요청 완료 상태
+ * ERROR: 에러가 생긴 상태
+ * LOADING: 로딩 상태
+ * INITIAL: 초기 상태
  */
-const stringVar: string = "String";
-const numberVar: number = 3;
-const bigIntVar: bigint = BigInt(999999);
-const booleanVar: boolean = true;
-const symbolVar: symbol = Symbol(1);
-const nullVar: null = null;
-const undefinedVar: undefined = undefined;
+function runWork() {
+  let state = "INITIAL";
 
-/**
- * TS에만 존재하는 타입
- */
-// any: 아무 타입이나 입력할 수 있는 치트키같은 타입
-// any를 남용하지 않는 방법 깨우치게 될 것.
-let anyVar: any;
-anyVar = 100;
-anyVar = "코드팩토리";
-anyVar = true;
+  try {
+    state = "LOADING";
+    //  작업을 한다
 
-// any는 다른 타입의 변수에 들어갈 수 있다.
-let testNumber: number = anyVar;
-let testString: string = anyVar;
-let testBoolean: boolean = anyVar;
+    state = "DONE";
+  } catch (e) {
+    state = "ERROR";
+  } finally {
+    return state;
+  }
+}
 
-// unknown - 알 수 없는 타입
-let unknownType: unknown;
-unknownType = 100;
-unknownType = "codeFactory";
-unknownType = true;
+console.log(runWork() === "DONE");
 
-// 1. unknown은 다른 타입의 변수에 들어갈 수 없다.
-// let testNumber2: number = unknownType;
-// let testString2: string = unknownType;
-// let testBoolean2: boolean = unknownType;
-// 2. unknown이나 any 타입에는 들어갈 수 있다.
-let unknowType2: unknown = unknownType;
-let anyType2: any = unknownType;
+const doneState = "DONE";
+const loadingState = "LOADING";
+const errorState = "ERROR";
+const initialState = "INITIAL";
 
-// never - 어떤한 값도 저장되거나 반환되지 않을 때 사용하는 타입 -> 함수 파트에서 학습할 예정.
+function runWork2() {
+  let state = initialState;
 
-/**
- * 리스트 타입
- */
-const koreanGirlGroup: string[] = ["아이브", "레드벨벳", "블랙핑크"];
-const booleanList: boolean[] = [true, false, false, true];
+  try {
+    state = loadingState;
+    //  작업을 한다
+
+    state = doneState;
+  } catch (e) {
+    state = errorState;
+  } finally {
+    return state;
+  }
+}
+
+console.log(runWork2() === doneState);
+
+enum State {
+  DONE,
+  LOADING,
+  INITIAL,
+  ERROR,
+}
+
+function runWork3() {
+  let state = State.INITIAL;
+
+  try {
+    state = State.LOADING;
+    //  작업을 한다
+
+    state = State.DONE;
+  } catch (e) {
+    state = State.ERROR;
+  } finally {
+    return state;
+  }
+}
+
+console.log(runWork3() === State.DONE);
+
+console.log(runWork3()); // 0번 인덱스가 나온다.
