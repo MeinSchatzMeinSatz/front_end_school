@@ -47,4 +47,4 @@ let anyType2 = unknownType;
  */
 const koreanGirlGroup = ["아이브", "레드벨벳", "블랙핑크"];
 const booleanList = [true, false, false, true];
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=2_basics.js.map
