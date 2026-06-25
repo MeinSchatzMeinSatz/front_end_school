@@ -59,6 +59,7 @@ let variable: number & string; // : never
 type Intersection = Dog & Person;
 
 let intersection1: Intersection = {
+  // Dog, Person 타입 모두의 프로퍼티를 포함한 개념
   name: "haha",
   color: "black",
   language: "korean",
