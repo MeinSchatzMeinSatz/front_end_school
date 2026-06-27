@@ -30,10 +30,11 @@ let str = returnFirstValue([1, "hello", "mynameis"]); // "hello"
  */
 
 function getLength<T extends { length: number }>(data: T) {
+  // number 타입의 length 프로퍼티를 가진 객체로 T를 제한
   return data.length;
 }
 
 let var1 = getLength([1, 2, 3]); // 3
 let var2 = getLength("12345"); // 5
 let var3 = getLength({ length: 10 }); // 10
-let var4 = getLength(10); // ❗️
+// let var4 = getLength(10); // ❗️
