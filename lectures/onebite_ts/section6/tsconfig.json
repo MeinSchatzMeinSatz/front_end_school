@@ -6,7 +6,8 @@
     "outDir": "dist",
     "strict": true,
     "moduleDetection": "force",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowJs": true
   },
   "ts-node": {
     "esm": true
