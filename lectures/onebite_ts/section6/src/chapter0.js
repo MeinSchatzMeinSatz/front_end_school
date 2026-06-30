@@ -62,6 +62,11 @@ studentB.intro();
  * 실습2
  */
 
+// 클래스 특징1) 클래스는 반드시 정의한 뒤에 사용할 수 있다. (초기화는 되지 않기 때문이다.)
+// const studentDeveloper = new StudentDev("이채준", "B+", 31, "TypeScript");
+// console.log(studentDeveloper);
+// studentDeveloper.programming();
+
 class StudentDev extends Student {
   // 필드
   favoriteSkill;
@@ -81,3 +86,6 @@ class StudentDev extends Student {
 const studentDeveloper = new StudentDev("이채준", "B+", 31, "TypeScript");
 console.log(studentDeveloper);
 studentDeveloper.programming();
+
+//
+console.log(StudentDev.name);
