@@ -20,11 +20,12 @@ load_dotenv(FILE_PATH, override=True)
 
 # 1. RAG 시스템 기반 설정
 ## 가상 기업 매뉴얼 파일 로드
-loader = TextLoader(file_path="/Users/leechaejun/selfstudy-repo/lectures/agent/data/manual.txt", encoding="utf-8")
+file_path = "/Users/leechaejun/selfstudy-repo/lectures/agent/data/manual.txt"
+loader = TextLoader(file_path=file_path, encoding="utf-8")
 documents = loader.load()
 
 ## 기준 chunk_size 측정
-optimal_chunk_size = get_optimal_chunk_size(documents)
+optimal_chunk_size = get_optimal_chunk_size(file_path)
 
 ## 텍스트 분할 처리 (청크 생성)
 text_splitter = RecursiveCharacterTextSplitter(chunk_size = optimal_chunk_size, chunk_overlap = 0)
