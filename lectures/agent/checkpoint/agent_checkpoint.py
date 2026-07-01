@@ -105,7 +105,7 @@ workflow.set_entry_point("rag_node")
 workflow.add_edge("rag_node", END)
 
 
-# DB 기반 영속성 체크ㅗㅍ인터 및 비동기 실행 실시간 채팅 루프 구현: Chatbot Agent 실행
+# DB 기반 영속성 체크포인터 및 비동기 실행 실시간 채팅 루프 구현: Chatbot Agent 실행
 ## 비동기 메인 함수 정의
 async def main():
   # 대화 기록을 지정할 SQLite DB 파이명 지정
