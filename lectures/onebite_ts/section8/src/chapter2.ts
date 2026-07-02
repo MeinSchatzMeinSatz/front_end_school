@@ -26,7 +26,7 @@ const person: Person = {
 
 console.log(getPropertyKey(person, "name")); // 이채준
 
-// typeof 연산자와 적용
+// typeof 연산자와 함께 적용
 
 const person2 = {
   name: "이채준",
@@ -36,6 +36,6 @@ const person2 = {
 
 type Person2 = typeof person2;
 
-function getPropertyKey2(person: Person, key: keyof typeof person) {
+function getPropertyKey2(person: Person, key: keyof typeof person2) {
   return person[key];
 }
