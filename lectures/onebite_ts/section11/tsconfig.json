@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "rootDir": "src",
-    "outDir": "dist",
+    "target": "ES5",
+    "module": "commonjs",
     "strict": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true
-  },
-  "ts-node": {
-    "esm": true
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "declaration": true
   },
   "include": ["src"]
 }
