@@ -1,2 +1,0 @@
-const personkey = "isOld";
-export {};
