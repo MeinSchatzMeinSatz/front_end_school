@@ -1,6 +1,7 @@
 /**
  * infer
  * inference: 추론하다.
+ * infer R은 이 조건식을 참이 되도록 만들수 있는 최적의 R 타입을 추론하라는 의미이다.
  */
 
 type FuncA = () => string;
