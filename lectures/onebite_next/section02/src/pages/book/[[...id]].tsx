@@ -1,9 +1,24 @@
-import { useRouter } from "next/router";
+import style from "./[id].module.css";
+import books from "@/mock/book.json";
 
 export default function Page() {
-  const router = useRouter();
-  const { id } = router.query;
-  console.log(id);
+  const { id, title, subTitle, description, author, publisher, coverImgUrl } =
+    books[0];
 
-  return <h1>book {id}</h1>;
+  return (
+    <div className={style.container}>
+      <div
+        className={style.cover_img_container}
+        style={{ backgroundImage: `url('${coverImgUrl}')` }}
+      >
+        <img src={coverImgUrl} alt="" />
+      </div>
+      <div className={style.title}>{title}</div>
+      <div className={style.subTitle}>{subTitle}</div>
+      <div className={style.author}>
+        {author} | {publisher}
+      </div>
+      <div className={style.description}>{description}</div>
+    </div>
+  );
 }
