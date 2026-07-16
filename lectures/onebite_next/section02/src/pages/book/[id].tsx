@@ -1,6 +1,5 @@
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from "next";
 import style from "./[id].module.css";
-import books from "@/mock/book.json";
 import fetchOneBook from "@/lib/fetch-one-book";
 
 export const getServerSideProps = async (
