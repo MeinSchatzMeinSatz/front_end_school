@@ -1,4 +1,6 @@
+import { BookData } from "@/types";
 import style from "./page.module.css";
+import { getBook } from "@/lib/api";
 
 export default async function Page({
   params,
@@ -7,15 +9,7 @@ export default async function Page({
 }) {
   const { id } = await params;
 
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book/${id}`
-  );
-
-  if (!response.ok) {
-    return <div>오류가 발생했습니다...</div>;
-  }
-
-  const book = await response.json();
+  const book = await getBook<BookData>(`/book/${id}`);
 
   const { title, subTitle, description, author, publisher, coverImgUrl } = book;
 
