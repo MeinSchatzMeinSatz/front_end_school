@@ -1,6 +1,8 @@
 import { BookData } from "@/types";
+import { cache } from "react";
 
-export async function getBooks(path: string): Promise<BookData[]> {
+export const getBooks = cache(async (path: string): Promise<BookData[]> => {
+  console.log("getBooks 호출:", path);
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_SERVER_URL}${path}`
   );
@@ -8,7 +10,7 @@ export async function getBooks(path: string): Promise<BookData[]> {
     throw new Error(`Failed to fetch: ${path}`);
   }
   return response.json();
-}
+});
 
 export async function getBook<T>(path: string): Promise<T> {
   const response = await fetch(

@@ -2,16 +2,10 @@ import "./globals.css";
 import Link from "next/link";
 import style from "./layout.module.css";
 import { BookData } from "@/types";
+import { getBooks } from "@/lib/api";
 
 async function Footer() {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book`
-  );
-  if (!response.ok) {
-    return <footer>제작 @leechaejun</footer>;
-  }
-
-  const books: BookData[] = await response.json();
+  const books: BookData[] = await getBooks("/book");
   const bookCount = books.length;
 
   return (
