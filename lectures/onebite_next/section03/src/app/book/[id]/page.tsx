@@ -1,11 +1,13 @@
 import { BookData } from "@/types";
 import style from "./page.module.css";
-import { getBook } from "@/lib/api";
+import { getBook, getBooks } from "@/lib/api";
 
 // export const dynamicParams = false;
 
-export function generateStaticParams() {
-  return [{ id: "1" }, { id: "2" }, { id: "3" }];
+export async function generateStaticParams() {
+  const allBooks = await getBooks("/book");
+
+  return allBooks.map((book) => ({ id: String(book.id) }));
 }
 
 export default async function Page({
